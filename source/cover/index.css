@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+.fab,.fas {
+    width: 20px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #7b7768;
+}
+a:hover {
+    color: #222222;
+    transition-duration: 0.5s;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer{
+    height: 18px;
+    width: 100%;
+    background-color: #eeeeee5b;
+    position: fixed;
+    bottom: 0;
+}
+
+.design {
+    margin: 0 auto;
+    width: max-content;
+    font-size: 8px;
+    color: darkgrey;
+}
+
+.design .fa-heart{
+    color: red;
+}
+
+.rows {
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 0 auto;
+    padding: 0 0 0 40px;
+    width: 160px;
+    margin: 10px 0;
+}
+
+.item .fab,.fas {
+    padding-right: 5px;
+}
+
+
+.tt-avatar {
+    margin: 100px auto 30px;
+    width:160px;
+    height:160px;
+    border-radius:100px;
+    background-image: url('/images/avatar.jpg');
+    background-size: cover;
+  }
+  
+  @media(min-width: 600px){
+    .tt-avatar {
+      margin: 150px auto 40px;
+      width:180px;
+      height:180px;
+    }
+
+    .rows {
+        width: 500px;
+    }
+    
+    .item{
+        padding: 0;
+        height: 20px;
+        width: max-content;
+        margin: 1px 10px;
+    }
+  }
+  
+  @media(min-width: 720px){
+    .tt-avatar {
+      margin: 20% auto 50px;
+      width:200px;
+      height:200px;
+    }
+  }

@@ -1,0 +1,186 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Dnocm ☀
+subtitle: 若白驹过隙，忽然而已
+description: 一个两个三个小朋友 四个五个...
+author: Mr.J
+language: [zh,en]
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://www.dnocm.com
+root: /
+permalink: articles/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - cover/**
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+favicon: /images/Smile.ico
+
+search:
+  field: all
+  format: raw
+  limit: 1000
+  script:
+    type: cdn
+    path: //cdn.jsdelivr.net/npm/hexo-cake-local-search@3.2.1/dist/local-search.min.js
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# 静态资源
+github:
+  assets: https://jiangtj.github.io/assets
+
+# ... 标准M与GFM不同
+marked:
+  breaks: false
+
+# generator setting
+archive_generator:
+  per_page: 20
+category_generator:
+  per_page: 20
+tag_generator:
+  per_page: 20
+
+pwa:
+  manifest:
+    path: /manifest.json
+    body:
+      name: Dnocm Blog
+      short_name: dnocm
+      lang: zh-CN
+      display: standalone
+      background_color: "#ecedee"
+      theme_color: "#414852"
+      icons:
+        - src: /images/favicon/xin-32.png
+          sizes: 32x32
+          type: image/png
+        - src: /images/favicon/xin-192.png
+          sizes: 192x192
+          type: image/png
+        - src: /images/favicon/xin-512.png
+          sizes: 512x512
+          type: image/png
+  serviceWorker:
+    path: /sw.js
+    options:
+      offlineGoogleAnalytics: true
+
+# 暂时先移除，似乎有问题
+# yarn add hexo-cake-live2d live2d-widget-model-miku live2d-widget-model-epsilon2_1
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-epsilon2_1
+  display:
+    width: 180
+    height: 360
+    position: left
+    hOffset: 0
+    vOffset: -65
+  mobile:
+    show: false
+  react:
+    opacity: 0.8
+  dialog:
+    enable: true
+    hitokoto: true
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+netlify_cms:
+  load_identity_widget: cake
+  config_file: netlify-cms.yaml
+
+moon_menu:
+  chat:
+    icon: fa fa-comments
+    func: openGitter
+
+jiang:
+  post_base_dir: cherry
+
+theme_plus:
+  debug: true
+  custom_path: views/layout
+  # views:
+  #   - path: '_macro/sidebar.swig'
+  #     file: 'custom/sidebar.swig'
+
+theme: cake
+
+marked_highlight:
+  engine: highlight
+  wrap_raw: true
+  options:
+    style: atom-one-light
+    style_dark: atom-one-dark # darcula
+    #load: node
+    #languages: ['markup', 'css', 'clike', 'javascript', 'java']
+    #theme_dark: twilight

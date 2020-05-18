@@ -1,0 +1,104 @@
+# NexT兼容
+scheme: Gemini
+
+avatar:
+  # In theme directory (source/images): /images/avatar.gif
+  # In site directory (source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: /images/avatar.jpg
+  # If true, the avatar would be dispalyed in circle.
+  rounded: true
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1
+  # If true, the avatar would be rotated with the cursor.
+  rotated: false
+
+favicons:
+ - rel: icon
+   type: image/png
+   sizes: 64x64
+   href: /images/favicon/xin-64.png
+ - rel: icon
+   type: image/png
+   sizes: 128x128
+   href: /images/favicon/xin-128.png
+ - rel: apple-touch-icon
+   sizes: 128x128
+   href: /images/favicon/xin-128.png
+ - rel: mask-icon
+   color: white
+   href: /images/favicon/xin.svg
+
+google_analytics:
+  tracking_id: UA-132230328-1
+
+social:
+  # Gitter: https://gitter.im/jiangtj/Lobby || github-alt
+  # Telegram: https://t.me/jiangtj || phone-square
+  # Slack: https://join.slack.com/t/dnocm/shared_invite/enQtNTg0MDMzMzM1ODkzLTQ4YjhkYTg5YTdhMjY3MzdhOGM0ZjI0YzgzYjZjMzZlNmMzNjE4YTkwMTUyN2UzZjFiYzcxN2ZmMWY2ZjFjMzU || slack
+  # Riot: https://riot.im/app/#/room/#dnocm:matrix.org || bolt
+  # GitLab: https://gitlab.com/JiangTJ || gitlab
+  # 简书: https://www.jianshu.com/u/42d8a7c1b531 || book
+  enable: true
+  items:
+    - icon: {name: envelope, options: {prefix: 'fas'}}
+      link: mailto:i@dnocm.com
+    - icon: {name: telegram, options: {prefix: 'fab'}}
+      link: https://t.me/dnocm
+    - icon: {name: rss, options: {prefix: 'fas'}}
+      link: /rss2.xml
+    - icon: {name: github, options: {prefix: 'fab'}}
+      link: https://github.com/JiangTJ
+
+menu:
+  home: / || fas fa-home
+  tags: /tags/ || fas fa-tags
+  categories: /categories/ || fas fa-th
+  archives: /archives/ || fas fa-archive
+  #sitemap: /sitemap.xml || fas fa-sitemap
+  #commonweal: /404/ || fas fa-heartbeat
+  #影视动漫,推荐!: https://neet.dnocm.com/ || fas fa-television
+  more: /more/ || fas fa-info-circle
+
+disqus:
+  enable: true
+  shortname: jiangtj
+  count: false
+utteranc:
+  enable: false
+  repo: jiangtj-lab/comments-test
+
+#chatra:
+#  enable: true
+#  async: true
+#  id: BBphpQAouKacekeKq
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# Reward (Donate)
+reward_settings:
+  # If true, reward would be displayed in every article by default.
+  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
+  enable: true
+  comment: Buy me a cup of milkshake 🍨.
+
+reward:
+  wechat:
+    icon: {name: weixin, options: {prefix: 'fab'}}
+    image: /images/wechatpay.png
+  alipay:
+    icon: {name: alipay, options: {prefix: 'fab'}}
+    image: /images/alipay.png
+    url_name: 点击跳转
+    url: HTTPS://QR.ALIPAY.COM/FKX06416WJNHOWKMRQQFFE
+  paypal:
+    icon: {name: paypal, options: {prefix: 'fab'}}
+    image: /images/paypal.png
+    url: https://www.paypal.me/jiangtj
+  kofi:
+    icon: {name: coffee, options: {prefix: 'fas'}}
+    image: /images/kofi.png
+    url: https://ko-fi.com/jiangtj

@@ -1,0 +1,37 @@
+Mail:
+  color: blue
+  des: '@dnocm'
+  href: mailto:i@dnocm.com
+
+GitHub:
+  color: blue
+  des: JiangTJ
+  href: https://github.com/JiangTJ
+
+GitLab:
+  color: blue
+  des: JiangTJ
+  href: https://gitlab.com/JiangTJ
+
+简书:
+  color: blue
+  des: MrTT
+  href: http://www.jianshu.com/u/42d8a7c1b531
+
+Gitter:
+  src: https://img.shields.io/gitter/room/jiangtj/Lobby.svg
+  href: https://gitter.im/jiangtj/Lobby
+
+Telegram:
+  color: blue
+  des: '@jiangtj'
+  href: https://t.me/jiangtj
+
+Telegram_Group:
+  color: blue
+  des: '@dnocm'
+  href: https://t.me/dnocm
+
+#Discord:
+#  src: https://img.shields.io/discord/441186172287582209.svg?logo=discord
+#  href: https://discord.gg/h98cTKQ
