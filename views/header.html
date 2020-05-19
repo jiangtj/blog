@@ -5,7 +5,7 @@
 </div>
 
 <script>
-if (window.location.hostname != 'dnocm.com' && window.location.hostname != 'localhost') {
+if (['dnocm.com', 'www.dnocm.com', 'localhost', 'jiangtj.com'].indexOf(window.location.hostname) < 0) {
 
   document.querySelector(".pin-top-msg").style.display = 'block';
   document.querySelector(".jump-to-dnocm").href = "https://dnocm.com" + window.location.pathname;
