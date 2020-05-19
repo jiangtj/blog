@@ -25,7 +25,7 @@ jobs:
       run: echo Hello, world!
 
     - name: Push to gitee
-      run: git push https://${{ secrets.PERSONAL_TOKEN }}@gitee.com/jiangtj/jiangtj.gitee.io.git
+      run: git push -f https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.gitee.io.git
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
