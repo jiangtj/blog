@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy
+name: Push to gitee
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -19,22 +19,8 @@ jobs:
     steps:
 
     - uses: actions/checkout@v2
-
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        fetch-depth: 0
 
-    - name: Build
-      run: |
-        npm install hexo-cli -g --silent
-        npm install
-        hexo g
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        publish_branch: master
-        publish_dir: ./public
-        external_repository: jiangtj/jiangtj.github.io
+    - name: Push to gitee
+      run: git push -f https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.gitee.io.git
