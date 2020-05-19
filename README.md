@@ -1,7 +1,6 @@
 # BLOG
-[![Home](https://img.shields.io/badge/Home-Gemini-blue.svg)](https://www.dnocm.com)
-[![Status](https://api.netlify.com/api/v1/badges/a36d950f-e882-4820-b2d0-a6a2c603672b/deploy-status)](https://app.netlify.com/sites/jiangtj/deploys)
-[![Mail](https://img.shields.io/badge/Mail-@Dnocm-blue.svg)](mailto:i@dnocm.com)
+[![Home](https://img.shields.io/badge/-Home-blue.svg)](https://www.dnocm.com)
+[![Mail](https://img.shields.io/badge/Mail-i@dnocm.com-blue.svg)](mailto:i@dnocm.com)
 [![Genertor](https://img.shields.io/badge/Generte-Hexo-blue.svg)](https://hexo.io)
 [![Theme](https://img.shields.io/badge/Theme-Cake-blue.svg)](https://github.com/jiangtj/hexo-theme-cake)
 
