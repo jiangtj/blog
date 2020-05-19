@@ -23,4 +23,4 @@ jobs:
         fetch-depth: 0
 
     - name: Push to gitee
-      run: git push -f https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.gitee.io.git
+      run: git push -f https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.git
