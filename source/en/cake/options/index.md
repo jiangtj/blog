@@ -1,6 +1,8 @@
 ---
 title: Options
 include: fm-cake-en
+date: 2020-05-20
+updated: 2020-05-20
 i18n:
   中文: /cake/options/
   English: /en/cake/options/

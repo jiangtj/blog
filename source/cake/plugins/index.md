@@ -1,6 +1,8 @@
 ---
 title: 插件
 include: fm-cake-zh
+date: 2020-05-20
+updated: 2020-05-20
 i18n:
   中文: /cake/plugins/
   English: /en/cake/plugins/

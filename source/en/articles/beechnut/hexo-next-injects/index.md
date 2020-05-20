@@ -1,6 +1,7 @@
 ---
 title: Hexo NexT Advanced Tutorial For Injects
 date: 2019-07-11 09:54:31
+updated: 2020-05-20
 description: A brand new custom way to share your Code.
 i18n:
   中文: /articles/beechnut/hexo-next-injects/

@@ -1,6 +1,7 @@
 ---
 title: VPN教程 - Shadowsocks
 date: '2019-01-01'
+updated: 2020-05-20
 comments: true
 ---
 

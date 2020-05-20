@@ -1,6 +1,7 @@
 ---
 title: Use git submodule manage hexo theme
 date: 2019-08-07 23:23:25
+updated: 2020-05-20
 i18n:
   中文: /articles/beechnut/hexo-git-submodule/
   English: /en/articles/beechnut/hexo-git-submodule/

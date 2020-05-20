@@ -1,6 +1,7 @@
 ---
 title: 公告
 date: 2018-11-12 13:01:12
+updated: 2020-05-20
 comments: true
 menu:
   articles: /more/bullhorn/articles/ || fas fa-font
