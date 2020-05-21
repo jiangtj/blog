@@ -184,3 +184,24 @@ marked_highlight:
     #load: node
     #languages: ['markup', 'css', 'clike', 'javascript', 'java']
     #theme_dark: twilight
+
+reward:
+  enable: true
+  comment: Buy me a cup of milkshake 🍨.
+  items:
+    wechat:
+      icon: {name: weixin, options: {prefix: 'fab'}}
+      image: /images/wechatpay.png
+    alipay:
+      icon: {name: alipay, options: {prefix: 'fab'}}
+      image: /images/alipay.png
+      url_name: 点击跳转
+      url: HTTPS://QR.ALIPAY.COM/FKX06416WJNHOWKMRQQFFE
+    paypal:
+      icon: {name: paypal, options: {prefix: 'fab'}}
+      image: /images/paypal.png
+      url: https://www.paypal.me/jiangtj
+    kofi:
+      icon: {name: coffee, options: {prefix: 'fas'}}
+      image: /images/kofi.png
+      url: https://ko-fi.com/jiangtj

@@ -1405,10 +1405,9 @@ hexo-server@^1.0.0:
     open "^6.3.0"
     serve-static "^1.14.1"
 
-hexo-theme-cake@^2.2.1:
+hexo-theme-cake@jiangtj/hexo-theme-cake:
   version "2.2.1"
-  resolved "https://registry.yarnpkg.com/hexo-theme-cake/-/hexo-theme-cake-2.2.1.tgz#e2b237e5c6ee4e86b6f95b1b1c65f6f60b88cb6e"
-  integrity sha512-rJdy2ruCRJidt5ViHpYREcj1O7keaFDz0IJab1xQXdIk5Agi4+gtIdE9et0oID77NA7Fud5Y27wQ1hjHjB3pbw==
+  resolved "https://codeload.github.com/jiangtj/hexo-theme-cake/tar.gz/a6dbb1980976311d9f1569242310e63d35b9285a"
   dependencies:
     "@jiangtj/hexo-renderer-marked" "^2.0.1"
     "@jiangtj/hexo-renderer-stylus" "^1.1.0"
@@ -1417,6 +1416,8 @@ hexo-theme-cake@^2.2.1:
     hexo-fontawesome "^2.1.0"
     hexo-renderer-ejs "^1.0.0"
     lodash "^4.17.15"
+    lozad "^1.14.0"
+    medium-zoom "^1.0.5"
 
 hexo-util@1.0.0:
   version "1.0.0"
@@ -1784,6 +1785,11 @@ lower-case@^2.0.1:
   dependencies:
     tslib "^1.10.0"
 
+lozad@^1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/lozad/-/lozad-1.14.0.tgz#91d51d57e53187e95c5b7f4029d7a28a0e940e10"
+  integrity sha512-uMGxpXBW15JDGVly3p121Y4jlb/OwmXpnMQR5vnb4GxMeK45NGcmlMrRr47fmLxtSdnGRFm0YdJaVXuudPKDaA==
+
 markdown@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/markdown/-/markdown-0.5.0.tgz#28205b565a8ae7592de207463d6637dc182722b2"
@@ -1800,6 +1806,11 @@ marked@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.0.tgz#62504ad4d11550c942935ccc5e39d64e5a4c4e50"
   integrity sha512-EkE7RW6KcXfMHy2PA7Jg0YJE1l8UPEZE8k45tylzmZM30/r1M1MUXWQfJlrSbsTeh7m/XTwHbWUENvAJZpp1YA==
+
+medium-zoom@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.5.tgz#81413dda20ccdd857141ff420cfab788dd32e20e"
+  integrity sha512-aLGa6WlTuFKWvH88bqTrY5ztJMN+D0hd8UX6BYc4YSoPayppzETjZUcdVcksgaoQEMg4cZSmXPg846fTp2rjRQ==
 
 micromatch@^4.0.2:
   version "4.0.2"

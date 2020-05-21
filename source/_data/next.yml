@@ -78,27 +78,4 @@ back2top:
   sidebar: false
   scrollpercent: true
 
-# Reward (Donate)
-reward_settings:
-  # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front Matter.
-  enable: true
-  comment: Buy me a cup of milkshake 🍨.
-
-reward:
-  wechat:
-    icon: {name: weixin, options: {prefix: 'fab'}}
-    image: /images/wechatpay.png
-  alipay:
-    icon: {name: alipay, options: {prefix: 'fab'}}
-    image: /images/alipay.png
-    url_name: 点击跳转
-    url: HTTPS://QR.ALIPAY.COM/FKX06416WJNHOWKMRQQFFE
-  paypal:
-    icon: {name: paypal, options: {prefix: 'fab'}}
-    image: /images/paypal.png
-    url: https://www.paypal.me/jiangtj
-  kofi:
-    icon: {name: coffee, options: {prefix: 'fas'}}
-    image: /images/kofi.png
-    url: https://ko-fi.com/jiangtj
+cc: by-nc-sa
