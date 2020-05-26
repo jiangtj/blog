@@ -29,6 +29,16 @@ menu:
 
 正文内容2
 
+
+# Same title
+标题一样的情况
+
+# Same title
+标题一样的情况
+
+## Same title
+标题一样的情况
+
 # List
 
 ## Ordered List

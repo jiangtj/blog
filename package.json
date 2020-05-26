@@ -11,7 +11,7 @@
   "dependencies": {
     "@jiangtj/hexo-config-plus": "^1.0.1",
     "@jiangtj/hexo-front-matter-include": "^1.0.0",
-    "@jiangtj/hexo-next-article-anchor": "^1.1.0",
+    "@jiangtj/hexo-next-article-anchor": "^1.2.0",
     "@jiangtj/hexo-next-pwa": "^0.1.1",
     "hexo": "^4.2.1",
     "hexo-autoprefixer": "^2.0.0",
@@ -34,7 +34,7 @@
     "hexo-theme-cake": "jiangtj/hexo-theme-cake"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
+    "eslint": "^7.1.0",
     "eslint-config-theme-next": "^1.1.4"
   }
 }
