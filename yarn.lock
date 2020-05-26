@@ -107,10 +107,10 @@
   resolved "https://registry.yarnpkg.com/@jiangtj/hexo-front-matter-include/-/hexo-front-matter-include-1.0.0.tgz#2e5958f663752e3c5e2594d6a86340884e2a22b6"
   integrity sha512-0E87RzS51d5E0dI6RZ+lIXtiNjIYpBRMJIji2Z2MA9TBMN3VPYMAasgXoUMvpuCmK93xfetM0eXXsnIqUTS7kg==
 
-"@jiangtj/hexo-next-article-anchor@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-next-article-anchor/-/hexo-next-article-anchor-1.2.0.tgz#0d51b68561b954b4d41f533a623ed2aa0aff8a94"
-  integrity sha512-YJ4VxlcpATWVi5+m8vx0QEDcKF08N9qAbLplzAml0x/aRmHTBv/fMbOrdsEeViApDVLBnIJ9wIhpGaXrHbrNuQ==
+"@jiangtj/hexo-next-article-anchor@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-next-article-anchor/-/hexo-next-article-anchor-1.2.1.tgz#9edc8bca679edcc65648f10b9a1a34dea4091055"
+  integrity sha512-kVvrxQ1NnIf6ye5njhYcKzVjE+tTJValHah9NGAOsOxzw5zJ6rebiAei+ucAcHQ/jo+Sub/tZqZ5L8A0UfqAIQ==
   dependencies:
     cheerio "^1.0.0-rc.3"
     hexo-extend-injector2 "^0.1.6"
@@ -1412,7 +1412,7 @@ hexo-theme-cake@jiangtj/hexo-theme-cake:
     "@jiangtj/hexo-renderer-marked" "^2.0.1"
     "@jiangtj/hexo-renderer-stylus" "^1.1.0"
     hexo-extend-injector2 "^0.1.6"
-    hexo-filter-marked-highlight "^1.2.0"
+    hexo-filter-marked-highlight "^1.0.0"
     hexo-fontawesome "^2.1.0"
     hexo-renderer-ejs "^1.0.0"
     lodash "^4.17.15"
