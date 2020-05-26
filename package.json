@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "update-theme": "git submodule update --remote"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server",
+    "update-theme": "git submodule update --remote",
+    "upgrade-l": "yarn upgrade --latest",
+    "upgrade-lp": "yarn upgrade --latest --proxy=http://localhost:1080"
   },
   "hexo": {
     "version": "4.2.1"
