@@ -51,14 +51,13 @@ social:
       link: https://github.com/JiangTJ
 
 menu:
-  home: / || fas fa-home
-  tags: /tags/ || fas fa-tags
-  categories: /categories/ || fas fa-th
-  archives: /archives/ || fas fa-archive
-  #sitemap: /sitemap.xml || fas fa-sitemap
-  #commonweal: /404/ || fas fa-heartbeat
-  #影视动漫,推荐!: https://neet.dnocm.com/ || fas fa-television
-  more: /more/ || fas fa-info-circle
+  home: {enable: true}
+  tags: {enable: true}
+  categories: {enable: true}
+  archives: {enable: true}
+  more:
+    path: /more/
+    icon: {name: info-circle, options: {prefix: 'fas'}}
 
 disqus:
   enable: true
