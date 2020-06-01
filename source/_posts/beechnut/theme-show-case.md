@@ -123,7 +123,7 @@ Inline pic ok? {% asset_img gua.png 100 %}
 
 # Link
 
-Autolink: https://www.dnocm.com/
+Autolink: https://jiangtj.com/
 
 [dnocm 站点](https://www.dnocm.com/)
 

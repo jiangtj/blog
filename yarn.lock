@@ -1194,10 +1194,10 @@ hexo-cake-google-analytics@^1.0.1:
   dependencies:
     hexo-cake-utils "^1.0.0"
 
-hexo-cake-local-search@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.3.0.tgz#e1b08bed3aeaba4ae3f366fcabd42738251c61fe"
-  integrity sha512-LFq47I5+OwCi5/+4R1WHh7C32AH6xBqt1XCbgP32A2OMkp6e5iP9t0pro02TlgMukLY8DhX/js7q3pqnlGWFyg==
+hexo-cake-local-search@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.0.tgz#62c1cea0fec384ef98fb0b86f7d81b4822142174"
+  integrity sha512-Pn73ip/wEA2MPCTBKBZf1hoeltI81FncCwIwltOrsSMfOJwb76NT/Yt6hV9HZM4lqBwY7C2y/RRZkm4qkP0++A==
   dependencies:
     ejs "^3.0.1"
     hexo-cake-utils "^1.2.1"
