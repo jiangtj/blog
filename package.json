@@ -15,10 +15,10 @@
     "version": "4.2.1"
   },
   "dependencies": {
-    "@jiangtj/hexo-config-plus": "^1.0.1",
     "@jiangtj/hexo-front-matter-include": "^1.0.0",
     "@jiangtj/hexo-next-article-anchor": "^1.2.1",
     "@jiangtj/hexo-next-pwa": "^0.1.1",
+    "@jiangtj/hexo-patch-load-theme-config": "^0.0.2",
     "hexo": "^4.2.1",
     "hexo-autoprefixer": "^2.0.0",
     "hexo-cake-canvas-ribbon": "^2.0.0",
@@ -37,7 +37,7 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-theme-cake": "^3.0.1"
+    "hexo-theme-cake": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
