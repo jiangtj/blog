@@ -23,7 +23,7 @@
     "hexo-autoprefixer": "^2.0.0",
     "hexo-cake-canvas-ribbon": "^2.0.0",
     "hexo-cake-google-analytics": "^1.0.1",
-    "hexo-cake-local-search": "^4.4.0",
+    "hexo-cake-local-search": "^4.4.1",
     "hexo-cake-moon-menu": "^2.3.1",
     "hexo-extend-injector2": "^0.1.6",
     "hexo-generator-archive": "^1.0.0",
@@ -37,7 +37,7 @@
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-theme-cake": "^3.0.0"
+    "hexo-theme-cake": "^3.0.1"
   },
   "devDependencies": {
     "eslint": "^7.1.0",

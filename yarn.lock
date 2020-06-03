@@ -415,9 +415,9 @@ camelcase@^1.0.2:
   integrity sha1-m7UwTS4LVmmLLHWLCKPqqdqlijk=
 
 caniuse-lite@^1.0.30001043, caniuse-lite@^1.0.30001061:
-  version "1.0.30001066"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001066.tgz#0a8a58a10108f2b9bf38e7b65c237b12fd9c5f04"
-  integrity sha512-Gfj/WAastBtfxLws0RCh2sDbTK/8rJuSeZMecrSkNGYxPcv7EzblmDGfWQCFEQcSqYE2BRgQiJh8HOD07N5hIw==
+  version "1.0.30001077"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001077.tgz#5d7da6a120b08d9f4fd94823786ecb454aaa5626"
+  integrity sha512-AEzsGvjBJL0lby/87W96PyEvwN0GsYvk5LHsglLg9tW37K4BqvAvoSCdWIE13OZQ8afupqZ73+oL/1LkedN8hA==
 
 center-align@^0.1.1:
   version "0.1.3"
@@ -811,9 +811,9 @@ ejs@^3.0.1:
     jake "^10.6.1"
 
 electron-to-chromium@^1.3.413:
-  version "1.3.457"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.457.tgz#f5662ce9f940df446a01ba27c739c83099631f1b"
-  integrity sha512-sirUGpEXQ91HpWByW1Q9XMeL/0RQHS8AhNdkYSlfS184i6ukHO12wiJECyVKnDqTt/YuETQX4C6VOrCGGDmlOA==
+  version "1.3.458"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.458.tgz#4ef179f9a0f1d8a658180c09b21bf73edddfc5eb"
+  integrity sha512-OjRkb0igW0oKE2QbzS7vBYrm7xjW/KRTtIj0OGGx57jr/YhBiKb7oZvdbaojqjfCb/7LbnwsbMbdsYjthdJbAw==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -1194,10 +1194,10 @@ hexo-cake-google-analytics@^1.0.1:
   dependencies:
     hexo-cake-utils "^1.0.0"
 
-hexo-cake-local-search@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.0.tgz#62c1cea0fec384ef98fb0b86f7d81b4822142174"
-  integrity sha512-Pn73ip/wEA2MPCTBKBZf1hoeltI81FncCwIwltOrsSMfOJwb76NT/Yt6hV9HZM4lqBwY7C2y/RRZkm4qkP0++A==
+hexo-cake-local-search@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.1.tgz#2fd60085561a9004f6400af214ca213eab2fbf18"
+  integrity sha512-bM4q0d8qDDPlzBRejEWbxctPiYfD0hRBGqq94XnThJOQROxj+I2GmJo1muqGy2MZ6B3k5fYBmexfyQLEzlFh6Q==
   dependencies:
     ejs "^3.0.1"
     hexo-cake-utils "^1.2.1"
@@ -1397,10 +1397,10 @@ hexo-server@^1.0.0:
     open "^6.3.0"
     serve-static "^1.14.1"
 
-hexo-theme-cake@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-cake/-/hexo-theme-cake-3.0.0.tgz#5379ed90002a98e8642107bdebd87a3584ad3ba5"
-  integrity sha512-tr4oMo65chkjcg5ZUsSNP0KuKpVkw0WgYQc0+akEjZrEQZejcDKBYcf9CjFoWeGKUEs3O/zZgsgeGEtMsfTKPA==
+hexo-theme-cake@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-cake/-/hexo-theme-cake-3.0.1.tgz#4fb2b3dd53a8f5507d52d517d14e2b38257ff7d5"
+  integrity sha512-esmjz56jTFzWxqaBe1rng9UUKjpiTijrHGGfwPRGRk1Fbmalh49n4NQJ9GJeiVGf8cZ+l/JtLNUxG86ovZWoqQ==
   dependencies:
     "@jiangtj/hexo-renderer-stylus" "^1.1.0"
     cheerio "^1.0.0-rc.3"
@@ -1966,9 +1966,9 @@ no-case@^3.0.3:
     tslib "^1.10.0"
 
 node-releases@^1.1.53:
-  version "1.1.57"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.57.tgz#f6754ce225fad0611e61228df3e09232e017ea19"
-  integrity sha512-ZQmnWS7adi61A9JsllJ2gdj2PauElcjnOwTp2O011iGzoakTxUsDGSe+6vD7wXbKdqhSFymC0OSx35aAMhrSdw==
+  version "1.1.58"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.58.tgz#8ee20eef30fa60e52755fcc0942def5a734fe935"
+  integrity sha512-NxBudgVKiRh/2aPWMgPR7bPTX0VPmGx5QBwCtdHitnqFE5/O8DeBXuIMH1nwNnw/aMo6AjOrpsHzfY3UbUJ7yg==
 
 nopt@~2.1.1:
   version "2.1.2"
