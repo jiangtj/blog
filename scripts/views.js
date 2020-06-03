@@ -5,16 +5,10 @@
 const fs = require('fs');
 const path = require('path');
 const injector = require('hexo-extend-injector2')(hexo);
-const { Cache } = require('hexo-util');
-const cache = new Cache();
 
 //gitter
-injector.register('head_end', () => {
-  return cache.apply('gitter', () => {
-    return fs.readFileSync(path.resolve(hexo.base_dir, 'views/gitter.html'), 'utf8');
-  });
-});
-
+injector.register('body-end', '<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>');
+injector.register('js', path.resolve(hexo.base_dir, 'views/gitter.js'));
 
 injector.register('head_end', fs.readFileSync(path.resolve(hexo.base_dir, 'views/head.html'), 'utf8'));
 injector.register('bodyBegin', fs.readFileSync(path.resolve(hexo.base_dir, 'views/header.html'), 'utf8'));
