@@ -205,3 +205,5 @@ reward:
       icon: {name: coffee, options: {prefix: 'fas'}}
       image: /images/kofi.png
       url: https://ko-fi.com/jiangtj
+
+font_size_ol_edit_preview: true
