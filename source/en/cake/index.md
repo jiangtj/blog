@@ -30,10 +30,15 @@ Why do I want to separate a topic separately? This mainly includes the following
 
 ```bash
 # Install hexo-theme-cake by npm or yarn cmd
-npm install hexo-theme-cake
 yarn add hexo-theme-cake
 ```
 
-Modify `theme` in `_config.yml` to `cake`.
+Modify `theme` to `cake`, if you are am linux user, can exec this cmd. Others modify it manually.
+
+```bash
+sed -ri 's/^theme:.*/theme: cake/g' _config.yml && hexo check
+```
+
+**If you use cake theme for the first time, you can exec `hexo check` to check whether the environment is complete.**
 
 `hexo s` runs, you can preview it locally

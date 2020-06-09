@@ -30,10 +30,15 @@ Cake取消了大量NexT上已有的功能，其中大部分能以插件形式，
 
 ```bash
 # Install hexo-theme-cake by npm or yarn cmd
-npm install hexo-theme-cake
 yarn add hexo-theme-cake
 ```
 
-然后修改`_config.yml`中的`theme`为`cake`。
+修改 `theme` 为 `cake`, 如果你是一个 linux 用户, 可以执行下面的命令行. 其他用户需要手动修改.
+
+```bash
+sed -ri 's/^theme:.*/theme: cake/g' _config.yml && hexo check
+```
+
+**如果你第一次使用cake主题, 你可以执行 `hexo check` 来检测你的环境是否完整.**
 
 `hexo s`运行，你就能本地预览啦
