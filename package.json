@@ -25,7 +25,7 @@
     "hexo-cake-google-analytics": "^1.0.1",
     "hexo-cake-local-search": "^4.4.1",
     "hexo-cake-moon-menu": "^2.3.1",
-    "hexo-extend-injector2": "^0.1.6",
+    "hexo-extend-injector2": "^0.1.7",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
@@ -40,7 +40,7 @@
     "hexo-theme-cake": "jiangtj/hexo-theme-cake"
   },
   "devDependencies": {
-    "eslint": "^7.1.0",
-    "eslint-config-theme-next": "^1.1.4"
+    "eslint": "^7.3.1",
+    "eslint-config-theme-next": "^1.2.0"
   }
 }
