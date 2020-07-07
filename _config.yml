@@ -181,9 +181,12 @@ marked_highlight:
   options:
     style: atom-one-light
     style_dark: atom-one-dark # darcula
-    #load: node
-    #languages: ['markup', 'css', 'clike', 'javascript', 'java']
-    #theme_dark: twilight
+  # engine: prism
+  # wrap_raw: true
+  # options:
+  #   #load: node
+  #   languages: ['markup', 'css', 'clike', 'javascript', 'java']
+  #   theme_dark: twilight
 
 reward:
   enable: true

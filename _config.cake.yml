@@ -48,12 +48,12 @@ comment:
   - name: disqus
     options:
       shortname: jiangtj
-  - name: utteranc
-    options:
-      repo: jiangtj-lab/comments-test
-  - name: livere
-    options:
-      uid: MTAyMC80MzMyNi8xOTg2Nw==
+  # - name: utteranc
+  #   options:
+  #     repo: jiangtj-lab/comments-test
+  # - name: livere
+  #   options:
+  #     uid: MTAyMC80MzMyNi8xOTg2Nw==
 
 #chatra:
 #  enable: true
