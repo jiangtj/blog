@@ -1057,13 +1057,13 @@ hexo-cake-local-search@^4.4.4:
     hexo-util "^2.0.0"
     js-yaml "^3.13.1"
 
-hexo-cake-moon-menu@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/hexo-cake-moon-menu/-/hexo-cake-moon-menu-2.3.1.tgz#93f89ad216419211eea1e59625c22f972e22a9d0"
-  integrity sha512-9feHg4xyoGM04RCllpDdul1v8o3VKWn9wgjOKyJwCBmAB1PpDS24WytkyXZ2dM2voBMjJZPQVioQZbr504KRQQ==
+hexo-cake-moon-menu@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/hexo-cake-moon-menu/-/hexo-cake-moon-menu-2.3.3.tgz#c74f7a0aef80d848e2e6c407ea46a7b4324dd674"
+  integrity sha512-Cv2CeENietj5NZNktHYwhd7XdzNf95H9NMAHE+Of0ixQCPVhTJtUeUI2qIpAa8NrRk2nqXJcekmnJbBNsmPlVg==
   dependencies:
-    ejs "^3.0.1"
-    hexo-extend-injector2 "^0.1.6"
+    ejs "^3.1.3"
+    hexo-extend-injector2 "^0.2.1"
     hexo-util "^2.0.0"
 
 hexo-cake-utils@^1.0.0, hexo-cake-utils@^1.2.1:
@@ -1267,10 +1267,10 @@ hexo-server@^1.0.0:
     open "^6.3.0"
     serve-static "^1.14.1"
 
-hexo-theme-cake@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-cake/-/hexo-theme-cake-3.1.0.tgz#45a91fc140448b472fe4d64c5badd8abbd8ede4d"
-  integrity sha512-CJk4P9apMfuGjp0Ojl3CV3AWKHRJ1dYWwHCFehhwTsYHUAf9HUi/+dI4pd5cpYlnOSwBKhM+29xfd8/2cQwXBA==
+hexo-theme-cake@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-cake/-/hexo-theme-cake-3.1.1.tgz#07b0f64647dad8e0d667d8d4624d3eb0880fb9a2"
+  integrity sha512-5FjbpnnyxM31iZSB+qc/D3PFQafONI1p8pFCMtMPzhU02GYAJLmBrBM1KtI97x3uo6hCIwNgy/9QFzdNYxFe1g==
   dependencies:
     ajv "^6.12.3"
     cheerio "^1.0.0-rc.3"
