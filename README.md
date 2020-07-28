@@ -11,7 +11,8 @@
 
 以下是由不同供应商提供的站点
 
-- <https://dnocm.com>(<https://www.dnocm.com>) 由netlify提供服务
-- https://jiangtj.com 由github pages提供服务
-- https://jiangtj.gitlab.io 由gitlab pages提供服务
+- <https://dnocm.com>(<https://www.dnocm.com>) 由vercel/now.sh提供服务
+- <https://jiangtj.com> 由github pages提供服务
+- <https://jiangtj.gitlab.io> 由gitlab pages提供服务
 - <https://zh.jiangtj.com>(<https://www.jiangtj.com>) 由coding提供服务，中国访问较快
+- <https://dnocm.netlify.app/> 由netlify提供服务
