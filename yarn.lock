@@ -69,13 +69,13 @@
     cheerio "^1.0.0-rc.3"
     hexo-extend-injector2 "^0.1.6"
 
-"@jiangtj/hexo-next-pwa@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-next-pwa/-/hexo-next-pwa-1.0.1.tgz#adc084ff80f571244f30b71393f2e4204a5a38a1"
-  integrity sha512-Q/SsRKUNrDwy07xAq0Eck9byxd7pehbJQMAxwPTG76pXThCDbFoWtkq1M4HPtwiXRFbzaHbIjBv+ibgGcTeIYg==
+"@jiangtj/hexo-next-pwa@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@jiangtj/hexo-next-pwa/-/hexo-next-pwa-1.0.2.tgz#83ba100bffe909d7eb186550fcfa3907f8156af1"
+  integrity sha512-yxzOpJG6J6jBexJnnHZPZ226VlrVqixdzP2cnypbUGzRlbM6n6zftcDIl0du+22a1x79n000nPTSwhV4NZ2MBg==
   dependencies:
     ejs "^3.1.3"
-    hexo-extend-injector2 "^0.1.7"
+    hexo-extend-injector2 "^0.2.0"
     js-yaml "^3.14.0"
     lodash "^4.17.15"
 
@@ -1045,14 +1045,14 @@ hexo-cake-google-analytics@^1.0.1:
   dependencies:
     hexo-cake-utils "^1.0.0"
 
-hexo-cake-local-search@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.2.tgz#51570ebac94f26dd691c3e94fe7263c72076eb0c"
-  integrity sha512-67w3pIHvr8FA14PVdyu9CdQ4Jkjq4r7kmYVdP7WpU7MiFbeuEYSlFvD6puZUW3v+4Gcsq/ofnyg9kZO1ebx8yg==
+hexo-cake-local-search@^4.4.4:
+  version "4.4.4"
+  resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.4.tgz#aababd3b858336ea1bf778f2a0100afa6c3d03a0"
+  integrity sha512-Qh8tfyyNEsGzNydyuoQvN6eGfjDjkkVq0bcQCma9OXqks3dptlOiZ2vaRdUeJEHl4ivCz8jS9ouCGyggOVSSQg==
   dependencies:
     ejs "^3.0.1"
     hexo-cake-utils "^1.2.1"
-    hexo-extend-injector2 "^0.1.3"
+    hexo-extend-injector2 "^0.2.0"
     hexo-generator-searchdb "^1.2.0"
     hexo-util "^2.0.0"
     js-yaml "^3.13.1"
@@ -1090,7 +1090,7 @@ hexo-cli@^3.0.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-extend-injector2@^0.1.0, hexo-extend-injector2@^0.1.3, hexo-extend-injector2@^0.1.6, hexo-extend-injector2@^0.1.7:
+hexo-extend-injector2@^0.1.0, hexo-extend-injector2@^0.1.6:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/hexo-extend-injector2/-/hexo-extend-injector2-0.1.7.tgz#e10f3f13b338581282c1bf35b7538ba3de163940"
   integrity sha512-ZdGE4eziA1M184mdDqZ529s7XCBzrj/KSH5sIkVJTSqVjSmK13ukL0i15aVFcmfBDFs3SDZUimlHi13W3rX8MQ==
@@ -1099,10 +1099,10 @@ hexo-extend-injector2@^0.1.0, hexo-extend-injector2@^0.1.3, hexo-extend-injector
     lodash "^4.17.15"
     terser "^4.6.6"
 
-hexo-extend-injector2@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/hexo-extend-injector2/-/hexo-extend-injector2-0.2.0.tgz#2b0470cd23e5452f9283320788b286a002db32ef"
-  integrity sha512-eyngiy7UVDG5vjpYFu5uvKYaPDiPgL45iN+uTDcZTA0HOBtzjLRkvTZ0GoH+Gcp2PilQnQc78au99esNgbGsGw==
+hexo-extend-injector2@^0.2.0, hexo-extend-injector2@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/hexo-extend-injector2/-/hexo-extend-injector2-0.2.1.tgz#89b15f7723017ab98967d0fd09cbd5b08e2db579"
+  integrity sha512-bHHO6MGW6e15jAbSTmRAAcwTZ7SdBCZQzaFNWjPcB2hdR+WAqbneJ6e6wNDezc4weIJ4c74RIKgGWIQhFbegyg==
   dependencies:
     clean-css "^4.2.3"
     hexo-util "^2.0.0"
@@ -1110,11 +1110,11 @@ hexo-extend-injector2@^0.2.0:
     terser "^4.6.6"
 
 hexo-filter-marked-highlight@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/hexo-filter-marked-highlight/-/hexo-filter-marked-highlight-1.2.1.tgz#5850918eefb2c48fcbd6b81ef0c3cbba858a1009"
-  integrity sha512-0SKlsZdV+NxnfvspvlyFQDmqaZ9jGswBY9hfned1Mih1Cg02kCUZJeVeUQ/+ckdTAIRJxLHoWgsi+XeHM+rYzw==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/hexo-filter-marked-highlight/-/hexo-filter-marked-highlight-1.2.2.tgz#317b975eb39ba48487444cc797449d86c60d043a"
+  integrity sha512-6JC5bw9W3XzO692kWHG5j1SaJQ2UC9259HFVFdQPXh6IVewf5krd1JTLoBdD/RSPslYbh4Bv7WlXitet7pNRpw==
   dependencies:
-    hexo-extend-injector2 "^0.1.6"
+    hexo-extend-injector2 "^0.2.0"
     hexo-util "^2.0.0"
     highlight.js "^10.0.0"
     prismjs "^1.19.0"
