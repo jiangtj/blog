@@ -3,17 +3,16 @@
 'use strict';
 
 const injector = require('hexo-extend-injector2')(hexo);
-const fa = hexo.extend.helper.get('fa_inline').bind(hexo);
 
-injector.register('postMeta', ({ __, post, i18n_post_meta }) => {
-  let metaContent = Object.keys(post.i18n).map(name => {
-    let link = post.i18n[name];
+injector.register('postMeta', ({ __, post, i18n_post_meta, fa_inline }) => {
+  const metaContent = Object.keys(post.i18n).map(name => {
+    const link = post.i18n[name];
     return i18n_post_meta(name, link, post.path);
   });
   return `
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        ${fa('globe', {prefix: 'fas'})}
+        ${fa_inline('globe', {prefix: 'fas'})}
         <i class="fa fa-globe"></i>
       </span>
       <span class="post-meta-item-text">${__('post.i18n')}</span>

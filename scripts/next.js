@@ -17,14 +17,14 @@ class ViewInject {
 }
 
 // 做一点兼容，方便测试NexT主题
-hexo.extend.filter.register('theme_inject', function(injects) {
+hexo.extend.filter.register('theme_inject', injects => {
   injects.menu = new ViewInject();
   hexo.theme.config.reward = {
     wechatpay: '/images/wechatpay.png'
   };
 }, -99);
 
-hexo.extend.filter.register('theme_inject', function(injects) {
+hexo.extend.filter.register('theme_inject', injects => {
   if (injects.menu.raws.length > 0) {
     hexo.theme.config.local_search.enable = true;
     injects.bodyEnd.raw('local-search', '');

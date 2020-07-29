@@ -32,7 +32,6 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -43,6 +42,15 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
+  theme: atom-one-light
+  theme_dark: atom-one-dark
+
+prismjs:
+  enable: false
+  preprocess: false
+  line_number: true
+  tab_replace: ''
+  theme_dark: twilight
 
 # Category & Tag
 default_category: uncategorized
@@ -177,7 +185,7 @@ theme: cake
 
 marked_highlight:
   engine: highlight
-  wrap_raw: true
+  wrap_raw: false
   options:
     style: atom-one-light
     style_dark: atom-one-dark # darcula

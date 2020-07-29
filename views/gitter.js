@@ -1,14 +1,14 @@
 
 ((window.gitter = {}).chat = {}).options = {
-  room             : 'jiangtj/Lobby',
+  room: 'jiangtj/Lobby',
   activationElement: false
 };
 // eslint-disable-next-line no-unused-vars
-var openGitter = function() {};
-document.addEventListener('gitter-sidecar-ready', function(e) {
-  var GitterChat = e.detail.Chat;
-  var chat = new GitterChat({
-    room             : 'jiangtj/Lobby',
+let openGitter = function() {};
+document.addEventListener('gitter-sidecar-ready', e => {
+  const GitterChat = e.detail.Chat;
+  const chat = new GitterChat({
+    room: 'jiangtj/Lobby',
     activationElement: false
   });
   openGitter = () => {

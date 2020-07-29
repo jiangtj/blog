@@ -4,7 +4,7 @@
 
 function createNewPost(args) {
   console.log(args);
-  //需要将date改为正确的日期
+  // 需要将date改为正确的日期
   args.slug = 'date-' + (args.slug || args._[0]);
   hexo.call('new', args);
 }
