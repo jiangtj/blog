@@ -7,6 +7,12 @@ const path = require('path');
 const injector = require('hexo-extend-injector2')(hexo);
 
 // gitter
+injector.register('body-end', `<script>
+((window.gitter = {}).chat = {}).options = {
+  room: 'jiangtj/Lobby',
+  activationElement: false
+};
+</script>`);
 injector.register('body-end', '<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>');
 injector.register('js', path.resolve(hexo.base_dir, 'views/gitter.js'));
 
