@@ -35,8 +35,6 @@ function print_nav_timing_data() {
 
   for (let i = 0; i < perfEntries.length; i++) {
     const p = perfEntries[i];
-    console.log('DOM complete = ' + p.domComplete);
-    console.log('document load = ' + (p.loadEventEnd - p.loadEventStart));
     if (p.domComplete > 10000) {
       console.log('DOM complete = ' + p.domComplete);
       const top = document.createElement('div');
