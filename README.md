@@ -9,10 +9,19 @@
 
 ## 地址
 
-以下是由不同供应商提供的站点
+<!-- server-start -->
 
-- <https://dnocm.com>(<https://www.dnocm.com>) 由vercel/now.sh提供服务
-- <https://jiangtj.com> 由github pages提供服务
-- <https://jiangtj.gitlab.io> 由gitlab pages提供服务
-- <https://zh.jiangtj.com>(<https://www.jiangtj.com>) 由coding提供服务，中国访问较快
+我的博客同时有多个平台提供服务，目前优质的站点是：
+
+- [Dnocm](https://dnocm.com) 由vercel提供服务，访问最快
+- [Jiangtj](https://jiangtj.com) 由github pages提供服务，一直来最稳定
+
+其它站点还有：
+
+- <https://jiangtj.gitlab.io/> 由gitlab pages提供服务
 - <https://dnocm.netlify.app/> 由netlify提供服务
+- <https://zh.jiangtj.com/> 由coding提供服务，coding CI使用的node v8,目前不可用，后期可能修复
+
+另外有些特殊域名，是vercel或者netlify对分支的部署，可能不是最新的内容，请前往以上站点访问
+
+<!-- server-end -->
