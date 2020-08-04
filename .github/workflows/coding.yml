@@ -36,7 +36,7 @@ jobs:
       run: |
         git config --global user.email "i@dnocm.com"
         git config --global user.name "jiangtj"
-        git clone https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.git deploy_dir
+        git clone https://${{ secrets.CODING_PASS }}@e.coding.net/jiangtj-lib/blog.git deploy_dir
         mv deploy_dir/.git public/.git
         cd public
         git add .
