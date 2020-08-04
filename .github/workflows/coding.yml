@@ -19,8 +19,26 @@ jobs:
     steps:
 
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
 
-    - name: Push to coding
-      run: git push -f https://${{ secrets.CODING_PASS }}@e.coding.net/jiangtj-lib/blog.git
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    - name: Build
+      run: |
+        npm install hexo-cli -g --silent
+        npm install
+        hexo cl
+        hexo g
+
+    - name: Push to gitee
+      run: |
+        git config --global user.email "i@dnocm.com"
+        git config --global user.name "jiangtj"
+        git clone https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.git deploy_dir
+        mv deploy_dir/.git public/.git
+        cd public
+        git add .
+        git commit -m 'deploy: ${{ github.sha }}'
+        git push -f https://${{ secrets.CODING_PASS }}@e.coding.net/jiangtj-lib/blog.git

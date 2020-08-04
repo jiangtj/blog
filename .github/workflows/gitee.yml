@@ -40,5 +40,5 @@ jobs:
         mv deploy_dir/.git public/.git
         cd public
         git add .
-        git commit -m 'deploy: $GITHUB_SHA'
+        git commit -m 'deploy: ${{ github.sha }}'
         git push -f https://${{ secrets.GITEE_PASS }}@gitee.com/jiangtj/jiangtj.git
