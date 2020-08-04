@@ -29,6 +29,7 @@ jobs:
       run: |
         npm install hexo-cli -g --silent
         npm install
+        hexo cl
         hexo g
 
     - name: Push to gitee
