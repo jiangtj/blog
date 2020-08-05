@@ -51,8 +51,7 @@ if ([
   'jiangtj.com',
   'zh.jiangtj.com',
   'dnocm.netlify.app',
-  'jiangtj.gitlab.io',
-  'jiangtj.gitee.io'
+  'jiangtj.gitlab.io'
 ].indexOf(window.location.hostname) < 0) {
   const top = document.createElement('div');
   top.classList.add('server-list-top');
