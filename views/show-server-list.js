@@ -48,12 +48,11 @@ function print_nav_timing_data() {
 
 if ([
   'dnocm.com',
-  'www.dnocm.com',
   'jiangtj.com',
   'zh.jiangtj.com',
-  'wwww.jiangtj.com',
   'dnocm.netlify.app',
-  'jiangtj.gitlab.io'
+  'jiangtj.gitlab.io',
+  'jiangtj.gitee.io'
 ].indexOf(window.location.hostname) < 0) {
   const top = document.createElement('div');
   top.classList.add('server-list-top');

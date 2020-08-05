@@ -20,7 +20,8 @@
 
 - <https://jiangtj.gitlab.io/> 由gitlab pages提供服务
 - <https://dnocm.netlify.app/> 由netlify提供服务
-- <https://zh.jiangtj.com/> 由coding提供服务，coding CI使用的node v8,目前不可用，后期可能修复
+- <https://zh.jiangtj.com/> 由coding提供服务
+- <https://jiangtj.gitee.io/> 由gitee提供服务
 
 另外有些特殊域名，是vercel或者netlify对分支的部署，可能不是最新的内容，请前往以上站点访问
 
