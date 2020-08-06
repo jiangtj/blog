@@ -16,6 +16,7 @@ injector.register('body-end', `<script>
 injector.register('body-end', '<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>');
 injector.register('js', path.resolve(hexo.base_dir, 'views/gitter.js'));
 
+injector.register('head_end', '<script data-ad-client="ca-pub-8243423215749776" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>');
 injector.register('head_end', fs.readFileSync(path.resolve(hexo.base_dir, 'views/head.html'), 'utf8'));
 injector.register('body-end', fs.readFileSync(path.resolve(hexo.base_dir, 'views/baidu-push.html'), 'utf8'));
 // injector.sidebar.file('custom', 'views/sidebar.swig', {}, {cache: true});
