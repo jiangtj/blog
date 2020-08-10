@@ -13,13 +13,13 @@
     "upgrade-lp": "yarn upgrade --latest --proxy=http://localhost:1080"
   },
   "hexo": {
-    "version": "5.0.0"
+    "version": "5.0.2"
   },
   "dependencies": {
     "@jiangtj/hexo-front-matter-include": "^1.0.0",
     "@jiangtj/hexo-next-article-anchor": "^1.2.1",
     "@jiangtj/hexo-next-pwa": "^1.0.2",
-    "hexo": "^5.0.0",
+    "hexo": "^5.0.2",
     "hexo-cake-canvas-ribbon": "^2.0.0",
     "hexo-cake-local-search": "^4.4.4",
     "hexo-cake-moon-menu": "^2.3.3",
@@ -27,11 +27,11 @@
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
     "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-pagination": "^1.0.0",
-    "hexo-server": "^1.0.0",
+    "hexo-server": "^2.0.0",
     "hexo-theme-cake": "^3.1.5"
   },
   "devDependencies": {
