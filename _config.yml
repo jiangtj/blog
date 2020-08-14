@@ -174,27 +174,7 @@ moon_menu:
 jiang:
   post_base_dir: cherry
 
-theme_plus:
-  debug: true
-  custom_path: views/layout
-  # views:
-  #   - path: '_macro/sidebar.swig'
-  #     file: 'custom/sidebar.swig'
-
 theme: cake
-
-marked_highlight:
-  engine: highlight
-  wrap_raw: false
-  options:
-    style: atom-one-light
-    style_dark: atom-one-dark # darcula
-  # engine: prism
-  # wrap_raw: true
-  # options:
-  #   #load: node
-  #   languages: ['markup', 'css', 'clike', 'javascript', 'java']
-  #   theme_dark: twilight
 
 reward:
   enable: true
