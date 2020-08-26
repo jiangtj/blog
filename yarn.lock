@@ -992,14 +992,6 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
-hexo-cake-canvas-ribbon@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-cake-canvas-ribbon/-/hexo-cake-canvas-ribbon-2.0.0.tgz#b4794b37e10ecccf057c354b69ffc4486f46fca2"
-  integrity sha512-dXF4COw8CTPcanCqqg9TLTO0TlnMriaLmgzk74bz+PJogtuZJ4NyZJMAOfSVHDh0/4I3N5GP/HiDAZQ+jnl0vg==
-  dependencies:
-    hexo-extend-injector2 "^0.1.0"
-    js-yaml "^3.13.1"
-
 hexo-cake-local-search@^4.4.4:
   version "4.4.4"
   resolved "https://registry.yarnpkg.com/hexo-cake-local-search/-/hexo-cake-local-search-4.4.4.tgz#aababd3b858336ea1bf778f2a0100afa6c3d03a0"
@@ -1044,7 +1036,7 @@ hexo-cli@^4.0.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-extend-injector2@^0.1.0, hexo-extend-injector2@^0.1.6:
+hexo-extend-injector2@^0.1.6:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/hexo-extend-injector2/-/hexo-extend-injector2-0.1.7.tgz#e10f3f13b338581282c1bf35b7538ba3de163940"
   integrity sha512-ZdGE4eziA1M184mdDqZ529s7XCBzrj/KSH5sIkVJTSqVjSmK13ukL0i15aVFcmfBDFs3SDZUimlHi13W3rX8MQ==
