@@ -8,13 +8,19 @@ tags: [vpn]
 ---
 
 # 服务器
+
 你需要购买一台境外的服务器，代理你的访问。你可以在很多地方购买，腾讯云、阿里云、vultr、Google Cloud、Digitalocean、AWS。
 
-目前，vultr最便宜但可能不稳定，你根据自己的需求选择。
+目前，腾讯云、阿里云推出了云轻服务器，1TB流量 24元/月，比vultr的 500GB 3.5$/月贵 1TB 5$/月便宜，你根据自己的需求选择。
+
+[点击前往 腾讯云 轻量应用服务器 Lighthouse（推广链接）](https://url.cn/CabLBmhb)
+
+在选购时，选择国外地区
 
 <!-- more -->
 
 # 部署SS
+
 1. 下载[Outline Manage](https://github.com/Jigsaw-Code/outline-server/releases)，选择合适你的系统（你日常使用的电脑，不是服务器），安装管理软件
 2. 点击添加，选择你的服务器供应商（如果没有，选第四个）
 {% asset_img 1.png %}
