@@ -1,7 +1,7 @@
 ---
 title: TICK Stack 实践之监控服务器
 date: 2018-5-21
-updated: 2018-5-21
+updated: 2020-9-1
 categories: [运维]
 tags: [TICK Stack]
 ---
@@ -17,8 +17,10 @@ tags: [TICK Stack]
 <!-- more -->
 
 # 安装
+
 TICK在官网<https://portal.influxdata.com/downloads>提供相应的下载安装方式，注意需要翻墙（JQuery引用的是Google源，会导致页面点击无反应）
 下面是Ubuntu & Debian的安装方式
+
 ```bash
 # telegraf
 wget https://dl.influxdata.com/telegraf/releases/telegraf_1.6.2-1_amd64.deb
@@ -35,6 +37,7 @@ sudo dpkg -i kapacitor_1.4.1_amd64.deb
 ```
 
 也可以通过添加apt源安装
+
 ```bash
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 source /etc/lsb-release
@@ -48,17 +51,22 @@ sudo apt-get install kapacitor
 
 
 # 运行
+
 通过linux命令启动相应的服务
+
 ```bash
 sudo systemctl start telegraf
 sudo systemctl start influxdb
 sudo systemctl start kapacitor
 sudo systemctl start chronograf
 ```
+
 默认情况下，访问<http://chronograf-ip:8888>即可
 
 # 配置
+
 一般情况下需要调整配置文件，使服务满足我们的需求，如权限等。
+
 可以查看官方相关的文档配置
 
 - [chronograf](https://docs.influxdata.com/chronograf/v1.4/introduction/getting-started/)
@@ -67,9 +75,11 @@ sudo systemctl start chronograf
 目前Chronograf 的权限支持github,google等账号体系，但企业内部使用可能需要重新开发，满足企业内部帐号权限系统
 
 # 其他
+
 事实上，监控的功能挺多余的，云服务商一般都为我们提供了不错的监控服务。但influxdb，目前来说最主流的时序数据库，可以用来存储其他一些数据。例如网站的访问量等。再通过chronograf展示数据，在[我的博客](https://www.dnocm.com/)的左侧菜单上有站点数据，就是通过这种方式来实现的，[我统计用的js脚本可以点这里看](https://gitlab.com/JiangTJ/jiangtj.gitlab.io/blob/master/source/_data/metric.swig)。
 
 # 参考
+
 - [TICK技术栈 -- DevOps轻量级监控解决方案](https://blog.csdn.net/lin_credible/article/details/60579738)
 - [Open Source Time Series Platform](https://www.influxdata.com/time-series-platform/)
 

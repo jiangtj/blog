@@ -1,7 +1,7 @@
 ---
 title: 小白VPN教程
 date: 2019-2-25
-updated: 2019-2-25
+updated: 2020-9-1
 description: 这可能是最简单的VPN教程，但仍有一定的门槛。
 categories: [工具]
 tags: [vpn]
