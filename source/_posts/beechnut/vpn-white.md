@@ -13,7 +13,7 @@ tags: [vpn]
 
 目前，腾讯云、阿里云推出了云轻服务器，1TB流量 24元/月，比vultr的 500GB 3.5$/月贵 1TB 5$/月便宜，你根据自己的需求选择。
 
-[点击前往 腾讯云 轻量应用服务器 Lighthouse（推广链接）](https://url.cn/CabLBmhb)
+[点击前往 腾讯云 轻量应用服务器 Lighthouse](https://cloud.tencent.com/act/cps/redirect?redirect=30206&cps_key=6a42afe857898b23e459adb601ec5d9d)
 
 在选购时，选择国外地区
 
