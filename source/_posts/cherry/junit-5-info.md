@@ -845,7 +845,131 @@ public class SimpleTest {
 }
 ```
 
-> 未完待续（一次写不完）
+### Intercepting Invocations
+
+拦截测试方法，类似于 Spring 中的 AOP
+
+```java
+@Slf4j
+@ExtendWith(MyInvocationInterceptorTest.LogInvocationInterceptor.class)
+public class MyInvocationInterceptorTest {
+
+    @ParameterizedTest
+    @ValueSource(strings = { "racecar", "radar", "able was I ere I saw elba" })
+    void showParameterized(String candidate) {
+        log.error(candidate);
+    }
+
+
+    static class LogInvocationInterceptor implements InvocationInterceptor {
+        @Override
+        public void interceptTestTemplateMethod(Invocation<Void> invocation,
+                                                ReflectiveInvocationContext<Method> invocationContext,
+                                                ExtensionContext extensionContext) throws Throwable {
+            Method executable = invocationContext.getExecutable();
+            List<Object> arguments = invocationContext.getArguments();
+            Class<?> targetClass = invocationContext.getTargetClass();
+            log.info("executable method: " + executable.getName());
+            log.info("arguments: " + arguments.stream().map(String::valueOf).collect(Collectors.joining()));
+            log.info("targetClass: " + targetClass.getName());
+            log.info("invocation.proceed() start");
+            invocation.proceed();
+            log.info("invocation.proceed() end");
+        }
+    }
+}
+```
+
+InvocationInterceptor 中有多个方法 `interceptBeforeAllMethod` `interceptTestMethod` `interceptTestTemplateMethod` 等，分别在不同的时候拦截，里中 `@ParameterizedTest` 继承 `@TestTemplate` 所以使用 `interceptTestTemplateMethod`
+
+拦截器中一般会传入这几个变量：
+- invocation: 测试请求，只有`proceed()`代表执行
+- invocationContext: 测试请求的上下文
+- extensionContext: 扩展的上下文
+
+### 为 Test Templates 提供上下文
+
+上面提到了 `@ParameterizedTest` 是由 `@TestTemplate`， 而 `@TestTemplate` 至少需要一个 `TestTemplateInvocationContextProvider` 提供时执行，在 `@ParameterizedTest` 中我们可以看到，`@ParameterizedTest` 由 `ParameterizedTestExtension.class` 提供测试的参数
+
+```java
+@TestTemplate
+@ExtendWith(ParameterizedTestExtension.class)
+public @interface ParameterizedTest {
+  // ...
+}
+```
+
+所以，相对于我写例子，直接学习它的源码可能更好，这是真实的案例，下面是 `ParameterizedTestExtension.class` 部分内容
+
+```java
+class ParameterizedTestExtension implements TestTemplateInvocationContextProvider {
+
+  private static final String METHOD_CONTEXT_KEY = "context";
+
+  // 在 TestTemplateInvocationContextProvider 提供两个方法，这是其中一个
+  // 用于判断是否支持该扩展，例如下面两判断分别是不存在测试方法与不存在注解@ParameterizedTest时不执行（按道理不能能出现的情况。。。）
+  @Override
+  public boolean supportsTestTemplate(ExtensionContext context) {
+    if (!context.getTestMethod().isPresent()) {
+      return false;
+    }
+    Method testMethod = context.getTestMethod().get();
+    if (!isAnnotated(testMethod, ParameterizedTest.class)) {
+      return false;
+    }
+
+    ParameterizedTestMethodContext methodContext = new ParameterizedTestMethodContext(testMethod);
+    Preconditions.condition(methodContext.hasPotentiallyValidSignature(),
+      () -> String.format(
+        "@ParameterizedTest method [%s] declares formal parameters in an invalid order: "
+            + "argument aggregators must be declared after any indexed arguments "
+            + "and before any arguments resolved by another ParameterResolver.",
+        testMethod.toGenericString()));
+    getStore(context).put(METHOD_CONTEXT_KEY, methodContext);
+    return true;
+  }
+
+
+  // 这是另一个方法
+  // 提供测试的参数
+  // 返回一个Stream，简单的样式是 Stream.of(invocationContext("apple"), invocationContext("banana"));
+  // ParameterizedTestExtension中比较复杂，大概是 获取提供值(获取参数提供器 -> 消费注解) -> 获取并消费参数 -> 构建InvocationContext
+  @Override
+  public Stream<TestTemplateInvocationContext> provideTestTemplateInvocationContexts(ExtensionContext extensionContext) {
+
+    Method templateMethod = extensionContext.getRequiredTestMethod();
+    String displayName = extensionContext.getDisplayName();
+    ParameterizedTestMethodContext methodContext = getStore(extensionContext)//
+        .get(METHOD_CONTEXT_KEY, ParameterizedTestMethodContext.class);
+    ParameterizedTestNameFormatter formatter = createNameFormatter(templateMethod, displayName);
+    AtomicLong invocationCount = new AtomicLong(0);
+
+    // @formatter:off
+    return findRepeatableAnnotations(templateMethod, ArgumentsSource.class)
+        .stream()
+        .map(ArgumentsSource::value)
+        .map(this::instantiateArgumentsProvider)
+        .map(provider -> AnnotationConsumerInitializer.initialize(templateMethod, provider))
+        .flatMap(provider -> arguments(provider, extensionContext))
+        .map(Arguments::get)
+        .map(arguments -> consumedArguments(arguments, methodContext))
+        .map(arguments -> createInvocationContext(formatter, methodContext, arguments))
+        .peek(invocationContext -> invocationCount.incrementAndGet())
+        .onClose(() ->
+            Preconditions.condition(invocationCount.get() > 0,
+                "Configuration error: You must configure at least one set of arguments for this @ParameterizedTest"));
+    // @formatter:on
+  }
+
+  // ...
+
+}
+
+```
+
+### 在扩展中保持状态
+
+熟悉前端的知道在 vue 或者 react 中都会涉及到状态 state 的保持，在junit 5 中也提供了类似的API `Store` （连名字都差不多。。。），大致上你可以理解为Map这类的东西，在 `ParameterizedTestExtension` 中也使用它存储了 `METHOD_CONTEXT_KEY`
 
 # 在 Spring 中的使用
 
