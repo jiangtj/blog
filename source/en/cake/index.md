@@ -10,7 +10,7 @@ i18n:
 
 # About
 
-![](/cake/images/t1.png)
+![image](https://user-images.githubusercontent.com/15902347/81540257-f48c2900-93a3-11ea-8f7a-8f17636344ff.png)
 
 Hexo Theme Cake is a lovely theme based on the 7.1.0 version of NexT. Just like Cake, it's very delicious, and it's easy to do.
 
@@ -24,12 +24,11 @@ Why do I want to separate a topic separately? This mainly includes the following
   - Exturl ~~encryption is meaningless for the front end, so it will be removed~~ , it's said to be effective for SEO, but I still removed it.
   - Note Tag refactoring, adjusting its headers, removing style configuration (retaining a nice style, due to stylus customization)
 
-> So if you like my style, try it out. If you prefer more built-in features, [NexT](https://github.com/theme-next/hexo-theme-next) might be better for you.
+> So if you like my style, try it out. If you prefer more built-in features, [NexT](https://github.com/next-theme/hexo-theme-next) might be better for you.
 
 # Quick Start
 
 ```bash
-# Install hexo-theme-cake by npm or yarn cmd
 yarn add hexo-theme-cake
 ```
 

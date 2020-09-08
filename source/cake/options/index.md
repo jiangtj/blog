@@ -23,9 +23,7 @@ theme_config:
       href: /images/favicon/xin-64.png
 ```
 
-如果你的hexo版本大于4.2，你还以在`_config.<theme>.yml`中配置，这等效于`theme_config`
-
-你也可以使用这个[hexo-config-plus](https://github.com/jiangtj-lab/hexo-config-plus)插件，修改配置
+如果你的hexo版本大于5.0，你还以在`_config.<theme>.yml`中配置，这等效于`theme_config`
 
 完整的配置，[前往主题仓库查看](https://github.com/jiangtj/hexo-theme-cake/blob/master/_config.yml)
 

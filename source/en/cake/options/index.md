@@ -23,11 +23,9 @@ theme_config:
       href: /images/favicon/xin-64.png
 ```
 
-If your hexo version is greater than 4.2, you can also configure it in `config.<theme>.yml`, which is equivalent to `theme_config`
+If your hexo version is greater than 5.0, you can also configure it in `config.<theme>.yml`, which is equivalent to `theme_config`
 
-You can also use this [hexo-config-plus](https://github.com/jiangtj-lab/hexo-config-plus) plugin to modify the configuration
-
-For the complete configuration,[go to the theme repository to view it](https://github.com/jiangtj/hexo-theme-cake/blob/master/_config.yml)
+For the complete configuration, [go to the theme repository to view it](https://github.com/jiangtj/hexo-theme-cake/blob/master/_config.yml)
 
 # Inject content
 
