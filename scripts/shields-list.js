@@ -13,7 +13,7 @@ const yaml = require('js-yaml');
 function renderShields(data) {
 
   const htmlTag = util.htmlTag;
-  const config = yaml.safeLoad(data);
+  const config = yaml.load(data);
 
   const items = Object.keys(config).map(key => {
     const value = config[key];

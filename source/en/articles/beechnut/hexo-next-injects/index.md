@@ -184,7 +184,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
   // Read the default configuration file
   // __dirname to the absolute directory of the file, you need to pay attention to the location here. If you do not use path to get the absolute path, the file readout will be abnormal (recommended, try npm pit)
-  let defaultConfig = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'default.yaml')));
+  let defaultConfig = yaml.load(fs.readFileSync(path.join(__dirname, 'default.yaml')));
   // Merge default configuration with moon_menu configuration in hexo
   let moonMenu = Object.assign(defaultConfig, hexo.config.moon_menu);
 

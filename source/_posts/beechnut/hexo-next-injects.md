@@ -184,7 +184,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 
   // 读取默认配置文件
   // __dirname至该文件的绝对目录，需要注意这里的位置如果不使用path获取绝对路径，文件读出会异常（建议你尝试，体验npm的坑）
-  let defaultConfig = yaml.safeLoad(fs.readFileSync(path.join(__dirname, 'default.yaml')));
+  let defaultConfig = yaml.load(fs.readFileSync(path.join(__dirname, 'default.yaml')));
   // 合并默认配置与hexo里的moon_menu配置
   let moonMenu = Object.assign(defaultConfig, hexo.config.moon_menu);
 

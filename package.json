@@ -32,7 +32,7 @@
     "hexo-pagination": "^1.0.0",
     "hexo-renderer-marked-mini": "^0.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-theme-cake": "^3.3.0"
+    "hexo-theme-cake": "^3.3.1"
   },
   "devDependencies": {
     "eslint": "^7.17.0",
