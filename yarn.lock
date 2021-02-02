@@ -914,14 +914,13 @@
     cheerio "^1.0.0-rc.3"
     hexo-extend-injector2 "^0.2.4"
 
-"@jiangtj/hexo-next-pwa@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@jiangtj/hexo-next-pwa/-/hexo-next-pwa-2.0.0.tgz#6ed7ebd2a87da0e4ea9764a3a11661e2b4cddc2f"
-  integrity sha512-Pq0C0OvRfylhs/1vyCIPi9xZN2nD0nmZAz1ARZKezdR7Zxggz9sR0pf/hCtVeWuhrXA4Xw1bAPzdjJ/+zy/gTA==
+"@jiangtj/hexo-next-pwa@^2.0.1-beta1":
+  version "2.0.1-beta1"
+  resolved "https://registry.npmjs.org/@jiangtj/hexo-next-pwa/-/hexo-next-pwa-2.0.1-beta1.tgz#1f7338cb06309251a8367fb93242f4eba248b759"
+  integrity sha512-aCSKFwBBtEZt3Aqayyy0UbPOklBvNS4pdM1tGKg+RCEXk64ylsxayJTmvZGH2+XNygXbZiBZUBlxyTJryDf+SQ==
   dependencies:
     hexo-extend-injector2 "^0.2.0"
     js-yaml "^4.0.0"
-    js-yaml-js-types "^1.0.0"
     lodash "^4.17.20"
     workbox-build "^6.1.0"
 
@@ -1766,7 +1765,7 @@ espree@^7.3.0, espree@^7.3.1:
     acorn-jsx "^5.3.1"
     eslint-visitor-keys "^1.3.0"
 
-esprima@^4.0.0, esprima@^4.0.1:
+esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
@@ -2471,13 +2470,6 @@ js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
-
-js-yaml-js-types@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/js-yaml-js-types/-/js-yaml-js-types-1.0.0.tgz#bf17cb75c7587c698294d15bbfa5f9b8b10b874b"
-  integrity sha512-UNjPwuoaj4mcHkJCJSF6l4MgkzoFjG+JJkBXMYNvjgO3yE9gTeRt+E6PN022vduz/daZZ7HmlEiSEE36NrGE4w==
-  dependencies:
-    esprima "^4.0.1"
 
 js-yaml@^3.12.0, js-yaml@^3.13.1:
   version "3.14.1"
