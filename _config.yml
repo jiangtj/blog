@@ -122,7 +122,6 @@ pwa:
           sizes: 512x512
           type: image/png
   serviceWorker:
-    path: /sw.js
     options:
       offlineGoogleAnalytics: true
 
