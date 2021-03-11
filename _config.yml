@@ -167,7 +167,6 @@ netlify_cms:
 moon_menu:
   chat:
     icon: fa fa-comments
-    func: openGitter
 
 jiang:
   post_base_dir: cherry

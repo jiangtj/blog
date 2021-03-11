@@ -11,7 +11,8 @@
     "update-theme": "git submodule update --remote",
     "upgrade-l": "yarn upgrade --latest",
     "upgrade-lp": "yarn upgrade --latest --proxy=http://localhost:1080",
-    "p": "yarn --proxy=http://localhost:1080"
+    "p": "yarn --proxy=http://localhost:1080",
+    "pg": "yarn --proxy=http://localhost:1080 --registry=https://registry.npmjs.org"
   },
   "hexo": {
     "version": "5.4.0"
@@ -22,7 +23,7 @@
     "@jiangtj/hexo-next-pwa": "^2.0.1",
     "hexo": "^5.4.0",
     "hexo-cake-local-search": "^4.4.4",
-    "hexo-cake-moon-menu": "^2.3.3",
+    "hexo-cake-moon-menu": "^2.4.0",
     "hexo-extend-injector2": "^0.2.4",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
