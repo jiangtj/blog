@@ -2273,10 +2273,10 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-cake@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/hexo-theme-cake/-/hexo-theme-cake-3.4.0.tgz#16af262e6fce4389aa9a1fdcdef06ad61d7d262a"
-  integrity sha512-zxUOTX5PQh1gfa3Jw4JvMhYvHMtMv/FQgnS7MJQNmYAixy/gTN7WL8Uihfzs0e4ZFILEXHzaY6KdlDmDdNsyww==
+hexo-theme-cake@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.npm.taobao.org/hexo-theme-cake/download/hexo-theme-cake-3.4.1.tgz?cache=0&sync_timestamp=1617263315770&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhexo-theme-cake%2Fdownload%2Fhexo-theme-cake-3.4.1.tgz#222cf225abef00455bfaf04e800820b19b8f86c6"
+  integrity sha1-IizyJavvAEVb+vBOgAggsZuPhsY=
   dependencies:
     "@jiangtj/hexo-patch-load-highlight-style" "^1.1.0"
     ajv "^7.2.1"
