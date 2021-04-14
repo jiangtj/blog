@@ -28,7 +28,7 @@ head:
     - rel: mask-icon
       color: white
       href: /images/favicon/xin.svg
-  theme_color: #414852
+  theme_color: '#414852'
 
 post:
   cc: by-nc-sa
