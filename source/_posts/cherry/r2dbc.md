@@ -43,7 +43,7 @@ public class AdminUser {
 - @Column: 定义列名.
 - @Version: 用于乐观锁的（暂时未尝试）.
 
-JPA 中的关系映射，如 `@ManyToOne` `@OneToMany`等，所以遇到有关联的时候，需要我们自己处理
+JPA 中的关系映射，如 `@ManyToOne` `@OneToMany`等也不支持的，所以遇到有关联的时候，需要我们自己处理
 
 ## 不支持 Page<T> 与 Specifications
 
@@ -84,7 +84,7 @@ select *
     order by id desc
 ```
 
-`one()` 不是 `limit 1`，只是表示获取到的数据是一条。。。
+`one()` 不是 `limit 1`，只是表示断言获取到的数据是一条。。。
 
 Fluent API 其实相当于 JAP 中 Specifications，也就是 Hibernate 中的 Criteria，目的是为了提供类型安全的查询，但是相对于 Hibernate 来说简单太多了
 
@@ -102,4 +102,128 @@ Fluent API 拥有接近原生SQL的写法表现，同时还能保证类型安全
 
 # 分页支持
 
-官方不支持Page<T>，原因在于生成Page<T>需要提前消费Flux<T>的数据，这是不推荐的，但是在某些场景下
+官方不支持Page<T>，原因在于生成Page<T>需要提前消费Flux<T>的数据，这是不推荐的，我们可以分成两个接口，一个用于获取数据，一个用于获取总数。但是在某些场景下，比如后台，对于性能要求不是很高，而且现有的框架已经对Page数据格式支持了，那么我们自然希望仍旧返回Page。
+
+我创建一个`PageQueryBuilder`，生成Page
+
+```java
+import static org.springframework.data.relational.core.query.Query.query;
+
+public class PageQueryBuilder<T> {
+
+    private final R2dbcEntityTemplate template;
+    private final Class<T> clz;
+    private Criteria criteria;
+    private Pageable pageable;
+
+    public PageQueryBuilder(R2dbcEntityTemplate template, Class<T> clz) {
+        this.template = template;
+        this.clz = clz;
+    }
+
+    public PageQueryBuilder<T> where(Criteria criteria) {
+        this.criteria = criteria;
+        return this;
+    }
+
+    public PageQueryBuilder<T> pageable(Pageable pageable) {
+        this.pageable = pageable;
+        return this;
+    }
+
+    public Mono<Page<T>> apply() {
+        return Mono.zip(selectList(), selectCount())
+            .map(tuple -> new PageImpl<>(tuple.getT1(), pageable, tuple.getT2()));
+    }
+
+    public <R> Mono<Page<R>> apply(Function<List<T>, Mono<List<R>>> fn) {
+        return Mono.zip(selectList().flatMap(fn), selectCount())
+            .map(tuple -> new PageImpl<>(tuple.getT1(), pageable, tuple.getT2()));
+    }
+
+    public <R> Mono<Page<R>> flatTuple(Function<Tuple2<List<T>, Long>, Mono<Tuple2<List<R>, Long>>> fn) {
+        return Mono.zip(selectList(), selectCount())
+            .flatMap(fn)
+            .map(tuple -> new PageImpl<>(tuple.getT1(), pageable, tuple.getT2()));
+    }
+
+    private Mono<List<T>> selectList() {
+        return template.select(clz)
+            .matching(query(criteria).with(pageable))
+            .all()
+            .collectList();
+    }
+
+    private Mono<Long> selectCount() {
+        return template.select(clz)
+            .matching(query(criteria))
+            .count();
+    }
+}
+```
+
+这样我们可以轻松的实现获取page
+
+```java
+Page<Persion> page = new PageQueryBuilder<>(template, Persion.class)
+  .where(where("name").is("John"))
+  .pageable(pageable)
+  .apply();
+```
+
+# 非Null字段更新
+
+R2DBC 添加是对于所以非null的字段生成sql添加，但是，更新是所有非@Id字段更新，但是我们经常会对于非null的数据更新，忽略null字段，所以我又写了个工具。。。
+
+```java
+public interface DbUtils {
+  
+    List<String> ignoreDescriptors = Arrays.asList("class");
+
+    static <T> Mono<Integer> update(R2dbcEntityTemplate template, T entity) {
+        PropertyDescriptor[] descriptors = BeanUtils.getPropertyDescriptors(entity.getClass());
+        Update update = null;
+        Query query = null;
+        for (PropertyDescriptor descriptor: descriptors) {
+            try {
+                String name = descriptor.getName();
+
+                if (ignoreDescriptors.contains(name)) {
+                    continue;
+                }
+
+                Object invoke = descriptor.getReadMethod().invoke(entity);
+                if (invoke == null) {
+                    continue;
+                }
+                if ("id".equals(name)) {
+                    query = query(Criteria.where(name).is(invoke));
+                } else {
+                    update = update == null? Update.update(name, invoke):
+                        update.set(name, invoke);
+                }
+            } catch (IllegalAccessException | InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (query == null || update == null) {
+            return Mono.error(new BadRequestException("无法生成有效的Sql语句！"));
+        }
+
+        return template.update(entity.getClass())
+            .matching(query)
+            .apply(update);
+    }
+}
+```
+
+下面是使用例子
+
+```java
+DbUtils.update(template, persion)
+```
+
+# 总结
+
+我甚至希望 Spring 能放弃对 Repositories 的支持，专心完善它的 Fluent API，可惜我在官方仓库中看到的基本都是提 Repositories 的需求，其实我也一样，一般情况 JPA 转过去的，都是先看有什么一样的API，方便入手，可是实际体验，还是Fluent API更加香啊
