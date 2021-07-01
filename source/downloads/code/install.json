@@ -1,0 +1,56 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2021-07-01T21:34:03.432-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "xiaomi.miuiplus"
+        },
+        {
+          "PackageIdentifier": "Docker.DockerDesktop"
+        },
+        {
+          "PackageIdentifier": "GitHub.GitHubDesktop"
+        },
+        {
+          "PackageIdentifier": "Git.Git"
+        },
+        {
+          "PackageIdentifier": "WPS.Office"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Edge"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal"
+        },
+        {
+          "PackageIdentifier": "Microsoft.OneDrive"
+        },
+        {
+          "PackageIdentifier": "JetBrains.Toolbox"
+        },
+        {
+          "PackageIdentifier": "Yarn.Yarn"
+        },
+        {
+          "PackageIdentifier": "OpenJS.NodeJS"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "AdoptOpenJDK.OpenJDK.11"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://winget.azureedge.net/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.0.11694"
+}
