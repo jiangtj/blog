@@ -1,11 +1,11 @@
 {
   "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-  "CreationDate": "2021-07-01T21:34:03.432-00:00",
+  "CreationDate": "2021-07-02T08:56:03.700-00:00",
   "Sources": [
     {
       "Packages": [
         {
-          "PackageIdentifier": "xiaomi.miuiplus"
+          "PackageIdentifier": "Canonical.Ubuntu"
         },
         {
           "PackageIdentifier": "Docker.DockerDesktop"
@@ -32,13 +32,25 @@
           "PackageIdentifier": "JetBrains.Toolbox"
         },
         {
+          "PackageIdentifier": "beekeeper-studio.beekeeper-studio"
+        },
+        {
+          "PackageIdentifier": "Tencent.QQ"
+        },
+        {
+          "PackageIdentifier": "Tencent.WeChat"
+        },
+        {
           "PackageIdentifier": "Yarn.Yarn"
         },
         {
-          "PackageIdentifier": "OpenJS.NodeJS"
+          "PackageIdentifier": "Microsoft.PowerToys"
         },
         {
           "PackageIdentifier": "Microsoft.VisualStudioCode"
+        },
+        {
+          "PackageIdentifier": "OpenJS.NodeJS"
         },
         {
           "PackageIdentifier": "AdoptOpenJDK.OpenJDK.11"
@@ -52,5 +64,5 @@
       }
     }
   ],
-  "WinGetVersion": "1.0.11694"
+  "WinGetVersion": "1.0.11692"
 }
