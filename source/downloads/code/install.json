@@ -43,6 +43,9 @@
         {
           "PackageIdentifier": "Yarn.Yarn"
         },
+				{
+					"PackageIdentifier" : "Telegram.TelegramDesktop"
+				},
         {
           "PackageIdentifier": "Microsoft.PowerToys"
         },
