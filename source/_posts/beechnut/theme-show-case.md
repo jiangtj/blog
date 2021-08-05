@@ -131,11 +131,9 @@ Autolink: https://jiangtj.com/
 
 ```md
 {% btn #, Text & Icon (buggy), fas fa-home %}
-{% btn #, Text & Icon (fixed width), fas fa-home fa-fw  %}
 ```
 
 {% btn #, Text & Icon (buggy), fas fa-home %}
-{% btn #, Text & Icon (fixed width), fas fa-home fa-fw %}
 
 # Note
 

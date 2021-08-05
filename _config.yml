@@ -178,15 +178,15 @@ reward:
   comment: Buy me a cup of milkshake 🍨.
   items:
     wechat:
-      icon: {name: weixin, options: {prefix: 'fab'}}
+      icon: {name: fab fa-weixin, options: {prefix: 'fab'}}
       image: /images/wechatpay.png
     alipay:
-      icon: {name: alipay, options: {prefix: 'fab'}}
+      icon: {name: fab alipay, options: {prefix: 'fab'}}
       image: /images/alipay.png
       url_name: 点击跳转
       url: HTTPS://QR.ALIPAY.COM/FKX06416WJNHOWKMRQQFFE
     paypal:
-      icon: {name: paypal, options: {prefix: 'fab'}}
+      icon: {name: fab paypal, options: {prefix: 'fab'}}
       image: /images/paypal.png
       url: https://www.paypal.me/jiangtj
     kofi:
@@ -195,3 +195,7 @@ reward:
       url: https://ko-fi.com/jiangtj
 
 font_size_ol_edit_preview: true
+
+icon:
+  ionicons:
+    style: Outline

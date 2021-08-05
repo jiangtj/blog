@@ -3,13 +3,13 @@ author:
   avatar:
     url: /images/avatar.jpg
   sns:
-    - icon: {name: envelope, options: {prefix: 'fas'}}
+    - icon: {name: envelope, options: {type: 'fa'}}
       link: mailto:i@dnocm.com
-    - icon: {name: telegram, options: {prefix: 'fab'}}
+    - icon: {name: fab telegram, options: {type: 'fa'}}
       link: https://t.me/dnocm
-    - icon: {name: rss, options: {prefix: 'fas'}}
+    - icon: {name: rss, options: {type: 'fa'}}
       link: /rss2.xml
-    - icon: {name: github, options: {prefix: 'fab'}}
+    - icon: {name: fab github, options: {type: 'fa'}}
       link: https://github.com/JiangTJ
 
 head:
@@ -43,7 +43,7 @@ menu:
   archives: {enable: true}
   more:
     path: /more/
-    icon: {name: info-circle, options: {prefix: 'fas'}}
+    icon: {name: info-circle, options: {type: 'fa'}}
 
 comment:
   - name: disqus
