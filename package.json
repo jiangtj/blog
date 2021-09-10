@@ -20,7 +20,7 @@
   "dependencies": {
     "@jiangtj/hexo-front-matter-include": "^1.0.0",
     "@jiangtj/hexo-next-article-anchor": "^1.3.0",
-    "@jiangtj/hexo-next-pwa": "^3.0.0-b3",
+    "@jiangtj/hexo-next-pwa": "^3.0.0",
     "@jiangtj/hexo-patch-load-highlight-style": "^1.2.0",
     "hexo": "^5.4.0",
     "hexo-cake-local-search": "^4.4.4",
