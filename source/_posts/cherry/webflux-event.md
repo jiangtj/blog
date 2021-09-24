@@ -117,6 +117,8 @@ public EventListener<Goods> listener() {
 }
 ```
 
+这样就好多了
+
 ## EventService
 
 最后，实现我们最重要的事件服务，它分为两个部分
