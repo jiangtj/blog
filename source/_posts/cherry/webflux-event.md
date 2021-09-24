@@ -292,4 +292,6 @@ Another listener for Goods: 苹果
 
 # 源码在这里
 
-> https://github.com/jiangtj-lab/ex-flux-event
+> 源码： https://github.com/jiangtj-lab/ex-flux-event
+
+> Spring 对 ApplicationEventPublisher 支持响应式技术栈的进展可以看这个Issue： https://github.com/spring-projects/spring-framework/issues/21025
