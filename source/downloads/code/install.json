@@ -1,68 +1,113 @@
 {
-  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-  "CreationDate": "2021-07-02T08:56:03.700-00:00",
-  "Sources": [
-    {
-      "Packages": [
-        {
-          "PackageIdentifier": "Canonical.Ubuntu"
-        },
-        {
-          "PackageIdentifier": "Docker.DockerDesktop"
-        },
-        {
-          "PackageIdentifier": "GitHub.GitHubDesktop"
-        },
-        {
-          "PackageIdentifier": "Git.Git"
-        },
-        {
-          "PackageIdentifier": "WPS.Office"
-        },
-        {
-          "PackageIdentifier": "Microsoft.Edge"
-        },
-        {
-          "PackageIdentifier": "Microsoft.WindowsTerminal"
-        },
-        {
-          "PackageIdentifier": "Microsoft.OneDrive"
-        },
-        {
-          "PackageIdentifier": "JetBrains.Toolbox"
-        },
-        {
-          "PackageIdentifier": "beekeeper-studio.beekeeper-studio"
-        },
-        {
-          "PackageIdentifier": "Tencent.QQ"
-        },
-        {
-          "PackageIdentifier": "Yarn.Yarn"
-        },
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2021-10-12T09:17:08.223-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "Alibaba.aDrive"
+				},
+				{
+					"PackageIdentifier" : "360.360zip"
+				},
+				{
+					"PackageIdentifier" : "Jigsaw.OutlineManager"
+				},
+				{
+					"PackageIdentifier" : "Canonical.Ubuntu"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier" : "Tencent.Foxmail"
+				},
+				{
+					"PackageIdentifier" : "GitHub.GitHubDesktop"
+				},
+				{
+					"PackageIdentifier" : "Git.Git"
+				},
+				{
+					"PackageIdentifier" : "Kingsoft.WPSOffice-CN"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Postman.Postman"
+				},
+				{
+					"PackageIdentifier" : "Tencent.QQBrowser"
+				},
+				{
+					"PackageIdentifier" : "Tencent.QQMusic"
+				},
+				{
+					"PackageIdentifier" : "Sogou.QQPinyin"
+				},
+				{
+					"PackageIdentifier" : "JetBrains.Toolbox"
+				},
+				{
+					"PackageIdentifier" : "Tencent.WeChat"
+				},
+				{
+					"PackageIdentifier" : "beekeeper-studio.beekeeper-studio"
+				},
+				{
+					"PackageIdentifier" : "Tencent.QQ"
+				},
+				{
+					"PackageIdentifier" : "ClashDotNet.ClashDotNet"
+				},
+				{
+					"PackageIdentifier" : "OpenJS.NodeJS"
+				},
+				{
+					"PackageIdentifier" : "Yarn.Yarn"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
+				},
 				{
 					"PackageIdentifier" : "Telegram.TelegramDesktop"
 				},
-        {
-          "PackageIdentifier": "Microsoft.PowerToys"
-        },
-        {
-          "PackageIdentifier": "Microsoft.VisualStudioCode"
-        },
-        {
-          "PackageIdentifier": "OpenJS.NodeJS"
-        },
-        {
-          "PackageIdentifier": "AdoptOpenJDK.OpenJDK.11"
-        }
-      ],
-      "SourceDetails": {
-        "Argument": "https://winget.azureedge.net/cache",
-        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
-        "Name": "winget",
-        "Type": "Microsoft.PreIndexed.Package"
-      }
-    }
-  ],
-  "WinGetVersion": "1.0.11692"
+				{
+					"PackageIdentifier" : "Microsoft.dotnetRuntime.5-x64"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "AdoptOpenJDK.OpenJDK.11"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x86"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://winget.azureedge.net/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.1.12701"
 }
