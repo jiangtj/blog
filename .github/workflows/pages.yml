@@ -17,21 +17,18 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
     - uses: actions/checkout@v2
-
     - name: Setup Node.js environment
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2.4.1
       with:
-        node-version: 12.x
-
+        node-version: '14'
+        cache: 'yarn'
     - name: Build
       run: |
-        npm install hexo-cli -g --silent
-        npm install
+        yarn global add hexo-cli
+        yarn install
         hexo cl
         hexo g
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
