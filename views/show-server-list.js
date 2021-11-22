@@ -49,7 +49,7 @@ function print_nav_timing_data() {
 if ([
   'dnocm.com',
   'jiangtj.com',
-  'zh.jiangtj.com',
+  'jiangtj-github-io.pages.dev',
   'dnocm.netlify.app',
   'jiangtj.gitlab.io'
 ].indexOf(window.location.hostname) < 0) {
