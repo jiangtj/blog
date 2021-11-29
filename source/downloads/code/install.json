@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-10-12T09:17:08.223-00:00",
+	"CreationDate" : "2021-11-29T17:25:20.509-00:00",
 	"Sources" : 
 	[
 		{
@@ -40,9 +40,6 @@
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.Firefox"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
 				},
 				{
@@ -70,7 +67,10 @@
 					"PackageIdentifier" : "Tencent.QQ"
 				},
 				{
-					"PackageIdentifier" : "ClashDotNet.ClashDotNet"
+					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
 				},
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
@@ -79,10 +79,7 @@
 					"PackageIdentifier" : "Yarn.Yarn"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
+					"PackageIdentifier" : "Logitech.GHUB"
 				},
 				{
 					"PackageIdentifier" : "Telegram.TelegramDesktop"
@@ -98,6 +95,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x86"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
 				}
 			],
 			"SourceDetails" : 
@@ -109,5 +109,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.1.12701"
+	"WinGetVersion" : "1.2.3131-preview"
 }
