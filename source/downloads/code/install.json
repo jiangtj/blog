@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-11-29T17:25:20.509-00:00",
+	"CreationDate" : "2021-12-02T11:49:20.258-00:00",
 	"Sources" : 
 	[
 		{
@@ -14,6 +14,9 @@
 				},
 				{
 					"PackageIdentifier" : "Jigsaw.OutlineManager"
+				},
+				{
+					"PackageIdentifier" : "MarkText.MarkText"
 				},
 				{
 					"PackageIdentifier" : "Canonical.Ubuntu"
@@ -73,7 +76,7 @@
 					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
 				},
 				{
-					"PackageIdentifier" : "OpenJS.NodeJS"
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
 				},
 				{
 					"PackageIdentifier" : "Yarn.Yarn"
@@ -91,7 +94,10 @@
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "AdoptOpenJDK.OpenJDK.11"
+					"PackageIdentifier" : "Oracle.JDK.17"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x86"
