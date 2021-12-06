@@ -1,8 +1,6 @@
 FROM node:16-alpine
 
-RUN mkdir /project
-WORKDIR /project
-COPY package.json yarn.lock ./
+COPY . .
 
 RUN yarn global add hexo-cli
 RUN yarn install
