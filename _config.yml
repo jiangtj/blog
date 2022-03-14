@@ -80,7 +80,9 @@ search:
 
 # sitemap
 sitemap:
-  path: sitemap.xml
+  path:
+    - sitemap.xml
+    - sitemap.txt
 baidusitemap:
   path: baidusitemap.xml
 
