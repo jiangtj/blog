@@ -1,7 +1,6 @@
 FROM node:16
 
-COPY . .
-
+RUN cd /com.docker.devenvironments.code
 RUN yarn global add hexo-cli
 RUN yarn install
 CMD yarn server
