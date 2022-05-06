@@ -4,4 +4,5 @@ COPY . .
 
 RUN yarn global add hexo-cli
 RUN yarn install
-CMD hexo s
+RUN git config --global --unset http.proxy
+RUN git config --global --unset https.proxy
