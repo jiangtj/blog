@@ -34,7 +34,7 @@
     "hexo-theme-cake": "^4.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.34.0",
+    "eslint": "^8.35.0",
     "eslint-config-hexo": "^5.0.0"
   }
 }
