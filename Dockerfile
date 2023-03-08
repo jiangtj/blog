@@ -1,13 +1,18 @@
-FROM node:16
+# syntax=docker/dockerfile:1.4
 
-# RUN ls /com.docker.devenvironments.code
-# RUN ls /code
+FROM node:lts AS development
+# FROM node:16
+
+WORKDIR /app
 
 COPY . .
 
 RUN yarn global add hexo-cli
 RUN yarn install
 
+CMD hexo s
+
+FROM development as dev-envs
 # 添加工具git docker vscode
 RUN <<EOF
 apt-get update
