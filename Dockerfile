@@ -14,17 +14,17 @@ CMD hexo s
 
 FROM development as dev-envs
 # 添加工具git docker vscode
-RUN <<EOF
-apt-get update
-apt-get install -y --no-install-recommends git
-EOF
-RUN <<EOF
-useradd -s /bin/bash -m vscode
-groupadd docker
-usermod -aG docker vscode
-EOF
+# RUN <<EOF
+# apt-get update
+# apt-get install -y --no-install-recommends git
+# EOF
+# RUN <<EOF
+# useradd -s /bin/bash -m vscode
+# groupadd docker
+# usermod -aG docker vscode
+# EOF
 # install Docker tools (cli, buildx, compose)
-COPY --from=gloursdocker/docker / /
+# COPY --from=gloursdocker/docker / /
 
 CMD hexo s
 # CMD serve public

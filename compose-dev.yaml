@@ -1,5 +1,7 @@
 services:
   web:
-    build: .
+    build:
+      context: .
+      target: dev-envs
     ports:
-      - 4000:4000
+      - "4000:4000"
