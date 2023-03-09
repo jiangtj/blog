@@ -1,18 +1,15 @@
 # syntax=docker/dockerfile:1.4
 
-FROM node:lts AS development
-# FROM node:16
-
-WORKDIR /app
-
-COPY . .
-
+FROM node:lts AS buildhexo
 RUN yarn global add hexo-cli
-RUN yarn install
 
+FROM buildhexo AS development
+WORKDIR /app
+COPY . .
+RUN yarn install
 CMD hexo s
 
-FROM development as dev-envs
+FROM buildhexo as dev-envs
 # 添加工具git docker vscode
 # RUN <<EOF
 # apt-get update
@@ -25,8 +22,4 @@ FROM development as dev-envs
 # EOF
 # install Docker tools (cli, buildx, compose)
 # COPY --from=gloursdocker/docker / /
-
-CMD hexo s
-# CMD serve public
-# RUN git config --global --unset http.proxy
-# RUN git config --global --unset https.proxy
+CMD /bin/sh -c "while sleep 1000; do :; done"
