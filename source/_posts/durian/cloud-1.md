@@ -44,7 +44,7 @@ docker run --name nacos-quick -e MODE=standalone -p 8848:8848 -p 9848:9848 -d na
 
 修改版本号到最新版本，这样服务就运行在了`8848`端口上(`9848`是节点间通讯的端口，用于集群)，打开 localhost:8848/nacos，输入默认的用户名密码nacos，就可以看到管理界面了
 
-图todo
+![](https://raw.githubusercontent.com/jiangtj/picgo-repo/master/img-a20230322093428.png)
 
 接下来，在[两个基础业务模块](https://jiangtj.com/articles/durian/cloud-0/#%E5%9F%BA%E7%A1%80%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97)中添加服务注册需要的依赖
 
@@ -80,9 +80,9 @@ spring.config.import=nacos:auth.properties
 # spring.config.import=nacos:auth.properties?refresh=true
 ```
 
-在 Nacos 管理平台上添加 `auth.properties` 这是后面鉴权时会用到的，这里暂时只是介绍怎么用 Nacos 配置中心
+在 Nacos 管理平台上添加 `auth.properties` 这是后面鉴权时会用到的（`secret` 填长一点），这里暂时只是介绍怎么用 Nacos 配置中心
 
-图todo
+![](https://raw.githubusercontent.com/jiangtj/picgo-repo/master/img-a20230322093727.png)
 
 如果你需要引入多个配置文件，只需要填写多个import，用逗号隔开即可
 
@@ -93,7 +93,7 @@ spring.config.import=nacos:auth.properties,nacos:base-servlet.properties
 
 运行两个服务后（修改为不同端口，我是17000与17001），我们可以观察到，他们在服务注册中心注册了
 
-图todo
+![](https://raw.githubusercontent.com/jiangtj/picgo-repo/master/img-a20230322093606.png)
 
 # 线上怎么部署？
 
