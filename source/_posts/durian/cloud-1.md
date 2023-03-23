@@ -32,6 +32,8 @@ Nacos 提供了以下主要功能：
 
 这些问题都需要一个强大而灵活的中间件来支撑。而 Nacos 正是这样一个中间件，它可以为我们提供一站式的解决方案。
 
+<!-- more -->
+
 # 快速上手吧
 
 Nacos 官方提供了许多的部署方式，他们在 `nacos-group` 组织里，比如 `nacos-docker` 提供在 docker 运行 Nacos，提供了很多个 docker compose 编排脚本，还有 `nacos-k8s` 提供了些 k8s 下的脚本

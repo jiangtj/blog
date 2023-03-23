@@ -24,6 +24,8 @@ updated: 2023-03-22 10:59:02
 
 这个和我原本自定义的错误内容差不多，所以，在这次搭建过程中，就使用了规范的定义，接下来就介绍我的开源项目[Spring Cloud Examples](https://github.com/jiangtj/spring-cloud-examples)中`micro-common`模块
 
+<!-- more -->
+
 # 创建 micro-common 模块
 
 像之前基础业务模块一样，创建一个`micro-common`模块，然后，修改`pom.xml`文件
