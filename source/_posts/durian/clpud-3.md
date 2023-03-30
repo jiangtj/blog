@@ -6,6 +6,8 @@ date: 2023-03-30
 updated: 2023-03-30
 ---
 
+> 配套源码：[spring-cloud-examples](https://github.com/jiangtj/spring-cloud-examples)
+
 Spring Cloud Tencent 与 Spring Cloud Alibaba 的差别如下
 
 - [x] 配置中心 支持配置属性更新回调
