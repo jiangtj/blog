@@ -257,6 +257,6 @@ public interface BaseClient {
 # 参考
 - [Feign源码地址](https://github.com/OpenFeign/feign)
 - [Spring Cloud OpenFeign 官方文档](http://cloud.spring.io/spring-cloud-openfeign/single/spring-cloud-openfeign.html)
-- [例子源码地址（可能存在改动和完善）](https://github.com/JiangTJ/spring-cloud-examples/tree/master/simple-example)
+- [例子源码地址（可能存在改动和完善）](https://github.com/jiangtj/jc-platform/tree/Greenwich/simple-example)
 
 
