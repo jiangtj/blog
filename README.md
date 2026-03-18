@@ -13,7 +13,6 @@
 
 我的博客同时有多个平台提供服务，目前优质的站点是：
 
-- [Dnocm](https://dnocm.com) 由vercel提供服务，访问最快
 - [Jiangtj](https://jiangtj.com) 由github pages提供服务，一直来最稳定
 
 其它站点还有：
