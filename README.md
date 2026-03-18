@@ -1,6 +1,6 @@
 # BLOG
 [![Home](https://img.shields.io/badge/-Home-blue.svg)](https://jiangtj.com)
-[![Mail](https://img.shields.io/badge/Mail-i@dnocm.com-blue.svg)](mailto:i@dnocm.com)
+[![Mail](https://img.shields.io/badge/Mail-i@jiangtj.com-blue.svg)](mailto:i@jiangtj.com)
 [![Genertor](https://img.shields.io/badge/Generte-Hexo-blue.svg)](https://hexo.io)
 [![Theme](https://img.shields.io/badge/Theme-Cake-blue.svg)](https://github.com/jiangtj/hexo-theme-cake)
 
