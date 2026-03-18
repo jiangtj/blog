@@ -1,12 +1,12 @@
 # syntax=docker/dockerfile:1.4
 
 FROM node:lts AS buildhexo
-RUN yarn global add hexo-cli
+RUN npm install -g pnpm hexo-cli
 
 FROM buildhexo AS development
 WORKDIR /app
 COPY . .
-RUN yarn install
+RUN pnpm install
 CMD hexo s
 
 FROM buildhexo as dev-envs

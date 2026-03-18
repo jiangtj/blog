@@ -18,15 +18,18 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 10
     - name: Setup Node.js environment
       uses: actions/setup-node@v3
       with:
-        node-version: '14'
-        cache: 'yarn'
+        node-version: '20'
+        cache: 'pnpm'
     - name: Build
       run: |
-        yarn global add hexo-cli
-        yarn install
+        pnpm add -g hexo-cli
+        pnpm install
         hexo cl
         hexo g
     - name: Deploy
