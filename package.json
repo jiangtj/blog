@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@jiangtj/hexo-front-matter-include": "^1.0.0",
+    "@jiangtj/hexo-next-pwa": "^4.0.0",
     "hexo": "^8.1.1",
     "hexo-cake-local-search": "^5.0.1",
     "hexo-cake-moon-menu": "^2.5.0",
