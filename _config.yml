@@ -7,7 +7,7 @@ title: Dnocm ☀
 #subtitle: 何须更问浮生事，只此浮生是梦中
 description: 何须更问浮生事，只此浮生是梦中
 author: Mr.J
-language: [zh,en]
+language: [zh, en]
 timezone: Asia/Shanghai
 
 # URL
@@ -48,7 +48,7 @@ prismjs:
   enable: false
   preprocess: false
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
   theme_dark: twilight
 
 # Category & Tag
@@ -159,7 +159,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
 
 netlify_cms:
@@ -180,19 +180,19 @@ reward:
   comment: Buy me a cup of milkshake 🍨.
   items:
     wechat:
-      icon: {name: fab fa-weixin, options: {prefix: 'fab'}}
+      icon: { name: fab fa-weixin, options: { prefix: "fab" } }
       image: /images/wechatpay.png
     alipay:
-      icon: {name: fab alipay, options: {prefix: 'fab'}}
+      icon: { name: fab alipay, options: { prefix: "fab" } }
       image: /images/alipay.png
       url_name: 点击跳转
       url: HTTPS://QR.ALIPAY.COM/FKX06416WJNHOWKMRQQFFE
     paypal:
-      icon: {name: fab paypal, options: {prefix: 'fab'}}
+      icon: { name: fab paypal, options: { prefix: "fab" } }
       image: /images/paypal.png
       url: https://www.paypal.me/jiangtj
     kofi:
-      icon: {name: coffee, options: {prefix: 'fas'}}
+      icon: { name: coffee, options: { prefix: "fas" } }
       image: /images/kofi.png
       url: https://ko-fi.com/jiangtj
 
@@ -201,3 +201,6 @@ font_size_ol_edit_preview: true
 icon:
   ionicons:
     style: Outline
+
+medium_zoom:
+  enable: true
