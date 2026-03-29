@@ -33,7 +33,7 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ github.token }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_branch: master
         publish_dir: ./public
         external_repository: jiangtj/jiangtj.github.io
