@@ -57,8 +57,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       hexo-theme-cake:
-        specifier: ^5.0.0
-        version: 5.0.0(@types/node@25.5.0)
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@25.5.0)
     devDependencies:
       eslint:
         specifier: ^10.0.3
@@ -1796,8 +1796,8 @@ packages:
     resolution: {integrity: sha512-jMTosxYsxrTi5bKgM9rO7ySAMyfLihbnSPRYzom/kwI5sMsSa1meYbP59y6fCrB8FdVpLNjj1mak2iyUZW1XhA==}
     engines: {node: '>=14'}
 
-  hexo-theme-cake@5.0.0:
-    resolution: {integrity: sha512-+pC9mhcyil5TB9TkUqgx5dGRWJ3AuiD+C+CNd21O8esjQRC3vGL6Erld4/UBJuKzaEYqUjzvE8oBd00ndERt+A==}
+  hexo-theme-cake@5.0.1:
+    resolution: {integrity: sha512-SMdsKT7Rnrvkp994LwnOlLqGcWJDA1VUjN01PaoTdgcIfg9RaswFKfPHkF7QA1K7U72toDKvT5zOayYBgOJA+g==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -2121,9 +2121,6 @@ packages:
 
   lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
-
-  lozad@1.16.0:
-    resolution: {integrity: sha512-JBr9WjvEFeKoyim3svo/gsQPTkgG/mOHJmDctZ/+U9H3ymUuvEkqpn8bdQMFsvTMcyRJrdJkLv0bXqGm0sP72w==}
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
@@ -5051,7 +5048,7 @@ snapshots:
     dependencies:
       hexo-util: 3.3.0
 
-  hexo-theme-cake@5.0.0(@types/node@25.5.0):
+  hexo-theme-cake@5.0.1(@types/node@25.5.0):
     dependencies:
       '@jiangtj/hexo-icon-svg-core': 1.1.0
       '@jiangtj/hexo-patch-load-highlight-style': 1.2.0
@@ -5064,7 +5061,6 @@ snapshots:
       inquirer: 13.3.2(@types/node@25.5.0)
       js-yaml: 4.1.1
       lodash: 4.17.23
-      lozad: 1.16.0
       medium-zoom: 1.1.0
       semver: 7.7.4
     transitivePeerDependencies:
@@ -5453,8 +5449,6 @@ snapshots:
   lower-case@2.0.2:
     dependencies:
       tslib: 2.8.1
-
-  lozad@1.16.0: {}
 
   lru-cache@10.4.3: {}
 

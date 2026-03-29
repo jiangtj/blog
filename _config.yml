@@ -201,6 +201,3 @@ font_size_ol_edit_preview: true
 icon:
   ionicons:
     style: Outline
-
-medium_zoom:
-  enable: true

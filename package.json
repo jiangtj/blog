@@ -31,7 +31,7 @@
     "hexo-renderer-marked": "^7.0.1",
     "hexo-server": "^3.0.0",
     "hexo-tag-embed": "^1.0.0",
-    "hexo-theme-cake": "^5.0.0"
+    "hexo-theme-cake": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^10.0.3",
