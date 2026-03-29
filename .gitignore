@@ -5,9 +5,6 @@ db.json
 node_modules/
 public/
 .deploy*/
-pnpm-lock.yaml
-pnpm-work.yaml
-pnpm-workspace.yaml
 
 
 ### idea U ###
